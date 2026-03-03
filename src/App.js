@@ -16,16 +16,16 @@ const pageMetadata = {
   ko: {
     htmlLang: "ko",
     locale: "ko_KR",
-    title: "B.Jang | Technical Product Manager",
+    title: "장병헌 | Technical Product Manager",
     description:
-      "B.Jang 포트폴리오. 제품 전략, 확장 가능한 플랫폼 설계, AI 의사결정 시스템에 집중하는 Technical Product Manager입니다.",
+      "장병헌 포트폴리오. 제품 전략, 확장 가능한 플랫폼 설계, AI 의사결정 시스템에 집중하는 Technical Product Manager입니다.",
   },
   en: {
     htmlLang: "en",
     locale: "en_US",
-    title: "B.Jang | Technical Product Manager",
+    title: "Byeongheon Jang | Technical Product Manager",
     description:
-      "Portfolio of B.Jang, a technical product manager focused on product strategy, scalable platforms, and AI decision-support systems.",
+      "Portfolio of Byeongheon Jang, a technical product manager focused on product strategy, scalable platforms, and AI decision-support systems.",
   },
 };
 

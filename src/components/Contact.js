@@ -45,7 +45,7 @@ const Contact = () => {
           })}
         </div>
         <p className="copyright">
-          Built by Jang Byunghun. <br/>
+          Built by Byeongheon Jang. <br/>
           Designed with React and custom CSS.
         </p>
       </footer>
