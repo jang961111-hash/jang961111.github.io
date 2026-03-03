@@ -2,6 +2,17 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './Contact.css';
 
+const profileLinks = [
+  {
+    label: 'GitHub',
+    href: 'https://github.com/jang961111-hash',
+  },
+  {
+    label: 'Email',
+    href: 'mailto:jang961111@gmail.com',
+  },
+];
+
 const Contact = () => {
   const { t } = useTranslation();
 
@@ -18,9 +29,20 @@ const Contact = () => {
       
       <footer className="footer-content">
         <div className="social-links">
-          <a href="https://github.com/jang961111-hash" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://velog.io" target="_blank" rel="noopener noreferrer">Blog</a>
+          {profileLinks.map((link) => {
+            const isExternal = !link.href.startsWith('mailto:');
+
+            return (
+              <a
+                key={link.label}
+                href={link.href}
+                target={isExternal ? '_blank' : undefined}
+                rel={isExternal ? 'noopener noreferrer' : undefined}
+              >
+                {link.label}
+              </a>
+            );
+          })}
         </div>
         <p className="copyright">
           Built by Jang Byunghun. <br/>
