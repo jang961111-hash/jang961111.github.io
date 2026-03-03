@@ -1,13 +1,85 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/700.css';
+
+:root {
+  /* Colors - Minimalist Monochrome Deep Dark */
+  --bg-primary: #050505;
+  --bg-secondary: #0f0f0f;
+  --bg-tertiary: #1a1a1a;
+  
+  --bg-hover: #1f1f1f;
+  
+  --text-primary: #f0f0f0;
+  --text-secondary: #a0a0a0;
+  --text-muted: #666666;
+
+  /* Strict Accents (Use very sparingly) */
+  --accent-primary: #ffffff;
+  --accent-muted: #4a4a4a;
+
+  /* Layout */
+  --nav-height: 80px;
+  --border-radius: 4px; /* Structured, sharp feel */
+}
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
     sans-serif;
+  background-color: var(--bg-primary);
+  background-image: radial-gradient(var(--bg-tertiary) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: 0 0;
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Base utility for emphasis */
+.text-highlight {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Divider lines for strict structural sections */
+.divider {
+  height: 1px;
+  background-color: var(--bg-tertiary);
+  width: 100%;
+  margin: 4rem 0;
+}
+
+/* System Typography Utilities */
+.mono {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9em;
+  letter-spacing: -0.5px;
 }

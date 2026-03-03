@@ -1,0 +1,91 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  background: transparent;
+  backdrop-filter: blur(0px);
+}
+
+.navbar.scrolled {
+  background: rgba(5, 5, 5, 0.85); /* Darker backdrop to match --bg-primary */
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--bg-tertiary);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  position: relative;
+  letter-spacing: 0.5px;
+}
+
+.nav-links a:hover {
+  color: var(--text-primary);
+}
+
+/* Minimalist Language Switcher */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.lang-option {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.lang-option:hover {
+  color: var(--text-secondary);
+}
+
+.lang-option.active {
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+.lang-divider {
+  color: var(--bg-tertiary);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Mobile menu implementation deferred for simplicity */
+  }
+}

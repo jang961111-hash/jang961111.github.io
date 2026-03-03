@@ -1,0 +1,250 @@
+.section {
+  padding: 100px 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-container {
+  width: 100%;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.section-title span {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin-right: 15px;
+  color: var(--text-muted);
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  max-width: 300px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--bg-tertiary),
+    var(--bg-tertiary) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  margin-left: 20px;
+}
+
+/* About Section Styles */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-text p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  max-width: 700px;
+}
+
+.skill-group {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px dashed var(--bg-tertiary);
+  max-width: 700px;
+}
+
+.skills-subtitle {
+  color: var(--text-primary) !important;
+  font-weight: 600;
+  margin-bottom: 1rem !important;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  color: var(--text-secondary);
+}
+
+.skills-list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  font-family: monospace;
+}
+
+.skills-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
+}
+
+/* Base structural card for projects/experience/approach */
+.structural-card {
+  position: relative;
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  border-radius: 0; /* Systems prefer sharp edges over curves */
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.structural-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--text-muted);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+}
+
+.structural-card::after {
+  content: '[SYS_DATA_BLK]';
+  font-family: 'JetBrains Mono', monospace;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  opacity: 0.5;
+  letter-spacing: 0.5px;
+}
+
+.structural-card:hover {
+  border-color: var(--text-secondary);
+  background: var(--bg-tertiary);
+}
+
+.structural-card:hover::before {
+  transform: scaleY(1);
+}
+
+/* Experience / Timeline Styles */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--bg-tertiary);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -35px;
+  top: 6px;
+  width: 10px;
+  height: 4px; /* Terminal cursor shape */
+  background: var(--text-secondary);
+  z-index: 2;
+  animation: blink 1.5s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.timeline-content h3 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.timeline-content h4 {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content .date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 1.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.timeline-content .description {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.task-list {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.task-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.task-list li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.detail-item p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 1.5rem;
+  }
+  
+  .section-title::after {
+    width: 100px;
+  }
+
+  .detail-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "identity": "Identity",
+    "experience": "Experience",
+    "projects": "Core Projects",
+    "contact": "Contact",
+    "strategy": "Product Strategy",
+    "depth": "Tech Depth",
+    "ai": "AI Strategy"
+  },
+  "hero": {
+    "name": "B.Jang",
+    "greeting": "Hello, I am",
+    "title": "Technical Product Manager",
+    "subtitle": "I define product direction, design scalable platforms,\nand integrate AI as a structural decision layer.",
+    "mission": "Architecting high-impact platforms and systemic strategies targeted for global enterprise ecosystems.",
+    "viewProjects": "View Core Projects",
+    "getInTouch": "Contact"
+  },
+  "identity": {
+    "title": "Identity & Product Philosophy",
+    "text1": "My academic roots in Philosophy fundamentally trained me in structural reasoning—equipping me to identify core systemic flaws rather than chasing surface-level features. I advocate for profound product direction, firmly believing that robust logical scaffolding dictates a product's market resonance and long-term viability.",
+    "text2": "I operate with an uncompromising platform scalability mindset. Moving far beyond localized functionalities, I prioritize decision traceability, ecosystem expansion, and rigorous risk-aware design. My central objective is to build unshakeable, predictable product architectures that unconditionally safeguard organizational accountability.",
+    "text3": "\"I treat AI as a structural redesign of decision systems, not as a feature.\"\nLeveraging profound technical acumen, I maintain seamless cross-functional alignment with engineering divisions. This ensures our strategic vision is translated flawlessly into concrete logic without falling victim to hype-driven engineering, positioning AI as a highly deliberate decision-support layer.",
+    "skills_title": "Core Competencies",
+    "skills": {
+      "platform": "Platform-Oriented Design",
+      "decision": "Decision Architecture",
+      "tech": "Technical Comm & Architecture",
+      "ai": "AI as Decision-Support Layer"
+    }
+  },
+  "projects": {
+    "title": "Platform Initiatives",
+    "items": {
+      "loggy": {
+        "title": "Loggy: Resolving the Volatility of Decision Architectures",
+        "subtitle": "A Git-inspired synchronous/asynchronous collaborative platform.",
+        "role": "Product Leader",
+        "problem": "Market Structural Flaw: Current collaboration tools inherently lack decision traceability. Critical organizational consensus and Engineering Decision Records (EDRs) fade immediately into unstructured, ephemeral chat streams, crippling long-term accountability.",
+        "insight": "Product Direction Insight: I conceptualized a Git-inspired operational model. By treating specific meeting agendas as independent 'branches' and finalized decisions as 'commits,' we radically redefined the collaborative structure into a permanent decision-record platform.",
+        "architecture": "Platform Design Decision: Engineered strict state isolation, definitively decoupling ephemeral interactions (WebSockets) from the persistent organizational decision logic (REST). This guaranteed absolute data integrity while paving the way for massive concurrent scaling.",
+        "learning": "Engineering Alignment & Execution: Directed cross-functional stakeholders through complex negotiations. Eschewed frontend trivialities to focus obsessively on state transition logic, proving that genuine platform leadership lies in orchestrating scalable system dependencies."
+      }
+    }
+  },
+  "strategy": {
+    "title": "Product Strategy & Platform Focus",
+    "items": {
+      "platform": {
+        "title": "Product Direction & Platform > Feature",
+        "desc": "I aggressively reject disjointed feature-factory mentalities. I steer overarching product direction by modeling ecosystem-level state transitions, evaluating market structural dynamics, and architecting cohesive platforms engineered for infinite scalability."
+      },
+      "alignment": {
+        "title": "Ecosystem Scalability & Alignment",
+        "desc": "Anchored in a relentless long-term roadmap mindset and profound revenue structure thinking, I consistently translate deeply complex business imperatives into undeniable engineering specifications, driving stakeholder alignment and seeding powerful network effects."
+      }
+    }
+  },
+  "depth": {
+    "title": "Technical Depth as Leverage",
+    "subtitle": "Structural engineering literacy operates not to boast implementation, but to wield profound leverage in systemic risk reduction.",
+    "items": {
+      "state": {
+        "title": "State Transition Modeling",
+        "desc": "Mastery over abstracting complex data integrity logic across client-server boundaries, vastly mitigating miscommunication latency and neutralizing technical debt before the very first line of code is written."
+      },
+      "realtime": {
+        "title": "System-level Risk Reduction",
+        "desc": "Fluent technical communication fortified by an intrinsic understanding of concurrent, real-time architectures, enabling the aggressive preemption of operational bottlenecks during the foundational architectural design phase."
+      }
+    }
+  },
+  "ai": {
+    "title": "AI Strategy & Deployment",
+    "subtitle": "AI is not a trendy appendage—it is a foundational structural integration. I deploy human-in-the-loop architectures that forcefully mitigate algorithmic overreliance.",
+    "items": {
+      "responsibility": {
+        "title": "Decision-Support & Responsibility Pivot",
+        "desc": "I position AI strictly as a hyper-accountable decision-support layer. By systematically instituting explainability-aware paradigms and rigid human-in-the-loop structures, I shift responsibility boundaries safely and ethically within enterprise ecosystems."
+      },
+      "integration": {
+        "title": "Risk Containment Architecture",
+        "desc": "Orchestrating comprehensive structural transformations that definitively isolate generative variance. I focus entirely on strategic architecture, ensuring AI capabilities are fully decoupled to contain unpredictable behavioral risks within enterprise-grade bounds."
+      }
+    }
+  },
+  "framework": {
+    "title": "Executive-Level Problem Solving Framework",
+    "steps": {
+      "1": {
+        "name": "Define Structural Problem",
+        "desc": "Interrogate surface-level symptoms to aggressively define the absolute structural market bottleneck."
+      },
+      "2": {
+        "name": "Analyze System-Level Risk",
+        "desc": "Evaluate technical dependencies and map unmitigated downstream systemic risks without illusion."
+      },
+      "3": {
+        "name": "Design Scalable Model",
+        "desc": "Pre-engineer scalable, platform-level business logic specifically crafted to absorb long-term, exponential ecosystem expansion."
+      },
+      "4": {
+        "name": "Validate with Minimal Structure",
+        "desc": "Ruthlessly isolate the most critical proof-of-concept required to secure pristine validation points against constrained organizational resources."
+      },
+      "5": {
+        "name": "Expand with Platform Lens",
+        "desc": "Accelerate growth pipelines by projecting validated structural logic confidently into adjacent revenue-generating domains."
+      }
+    }
+  },
+  "experience": {
+    "title": "Leadership & Structural Growth",
+    "jobs": {
+      "ssafy": {
+        "title": "Cross-Functional Collaboration & Platform Thinking",
+        "company": "SSAFY (Samsung SW Academy For Youth)",
+        "period": "2023 - PRESENT",
+        "desc1": "Synthesized rigid algorithmic logic with advanced product thinking throughout an intensive, full-time structural incubator environment.",
+        "desc2": "Exercised product leadership across multiple high-velocity agile sprints, continuously driving engineering alignment and architecting platforms with unyielding scalability.",
+        "desc3": "Recognized with the Excellence Project Award for demonstrating executive-level product direction and profound structural modeling potential."
+      },
+      "marines": {
+        "title": "Decision Clarity Under Extreme Pressure",
+        "company": "Republic of Korea Marine Corps",
+        "period": "2017 - 2018",
+        "desc1": "Internalized ironclad discipline and overarching accountability within severely constrained, zero-margin-for-error operational environments.",
+        "desc2": "Mastered the absolute necessity of hyper-structured chain-of-command protocols and instantaneous decision clarity during unpredictable crises."
+      },
+      "jaguar": {
+        "title": "Customer Experience System Operation",
+        "company": "Jaguar Land Rover (Chunil Automobile)",
+        "period": "2016",
+        "desc1": "Directed comprehensive VIP customer experience pipelines, forcefully maintaining a persistent, high-altitude system view over real-time operational flows.",
+        "desc2": "Continuously interrogated and restructured field movement systems to immediately eradicate bottlenecks and maximize operational throughput."
+      },
+      "restaurant": {
+        "title": "Business Model & Revenue Structure Thinking",
+        "company": "Private Enterprise (F&B)",
+        "period": "2015",
+        "desc1": "Shouldered absolute ownership of end-to-end business models, ingraining a deep-seated responsibility for foundational revenue structures from inception.",
+        "desc2": "Exhibited aggressive operational scalability by optimizing physical demand pipelines in direct response to highly volatile market traffic assumptions."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "CONTACT",
+    "description": "I am openly seeking discussions regarding strategic platform challenges, product direction roles, and structural enterprise scalability.",
+    "button": "Say Hello",
+    "github": "GitHub",
+    "email": "Email",
+    "linkedin": "LinkedIn"
+  }
+}
