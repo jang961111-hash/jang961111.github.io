@@ -5,7 +5,7 @@ import './Section.css';
 const ProblemSolving = () => {
   const { t } = useTranslation();
 
-  const frameworkKeys = ['step1', 'step2', 'step3', 'step4', 'step5'];
+  const frameworkKeys = ['1', '2', '3', '4', '5'];
 
   return (
     <section className="section bg-dark text-light" id="framework">
@@ -15,10 +15,10 @@ const ProblemSolving = () => {
             <span className="section-number" style={{ marginRight: '1rem', opacity: 0.5 }}>06.</span>
             {t('framework.title')}
           </h2>
-          <p style={{ color: '#a0a0a0', fontSize: '1.1rem' }}>{t('framework.subtitle')}</p>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem' }}>{t('framework.subtitle')}</p>
         </div>
         
-        <div className="timeline" style={{ borderLeft: '1px solid rgba(255, 255, 255, 0.1)', paddingLeft: '2rem', marginLeft: '1rem' }}>
+        <div className="timeline" style={{ borderLeft: '1px solid var(--border-subtle)', paddingLeft: '2rem', marginLeft: '1rem' }}>
           {frameworkKeys.map((key) => (
             <div key={key} className="timeline-item" style={{ position: 'relative', marginBottom: '3rem' }}>
               <div 
@@ -28,7 +28,7 @@ const ProblemSolving = () => {
                   top: '0.2rem', 
                   width: '8px', 
                   height: '8px', 
-                  background: '#f0f0f0', 
+                  background: 'var(--text-primary)', 
                   borderRadius: '50%' 
                 }} 
               />
@@ -36,7 +36,7 @@ const ProblemSolving = () => {
                 <h3 className="timeline-title" style={{ fontSize: '1.2rem', marginBottom: '0.5rem', fontWeight: 600 }}>
                   {t(`framework.steps.${key}.name`)}
                 </h3>
-                <p className="timeline-desc" style={{ color: '#a0a0a0', lineHeight: 1.6 }}>
+                <p className="timeline-desc" style={{ color: 'var(--text-secondary)', lineHeight: 1.6 }}>
                   {t(`framework.steps.${key}.desc`)}
                 </p>
               </div>

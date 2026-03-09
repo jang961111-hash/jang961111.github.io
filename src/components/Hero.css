@@ -79,9 +79,9 @@
   aspect-ratio: 4 / 5;
   padding: 0.45rem;
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--portrait-border);
+  background: linear-gradient(180deg, var(--portrait-grad-top), var(--portrait-grad-bottom));
+  box-shadow: 0 24px 60px var(--portrait-shadow);
   overflow: hidden;
   transition:
     transform 220ms ease,
@@ -175,8 +175,8 @@
 @media (hover: hover) and (pointer: fine) {
   .hero-portrait-frame:hover {
     transform: translateY(-2px);
-    border-color: rgba(255, 255, 255, 0.16);
-    box-shadow: 0 28px 72px rgba(0, 0, 0, 0.42);
+    border-color: var(--portrait-border-hover);
+    box-shadow: 0 28px 72px var(--portrait-shadow-hover);
   }
 
   .hero-portrait-frame:hover .hero-portrait {

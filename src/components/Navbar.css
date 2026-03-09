@@ -11,9 +11,9 @@
 }
 
 .navbar.scrolled {
-  background: rgba(5, 5, 5, 0.85); /* Darker backdrop to match --bg-primary */
+  background: var(--nav-bg);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .nav-container {
@@ -31,12 +31,19 @@
   font-weight: 700;
   letter-spacing: -0.5px;
   color: var(--text-primary);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .nav-links {
   display: flex;
-  gap: 2.5rem;
+  gap: 2.2rem;
   align-items: center;
+  flex-wrap: nowrap;
+}
+
+.nav-links > li {
+  flex-shrink: 0;
 }
 
 .nav-links a {
@@ -46,13 +53,14 @@
   transition: all 0.2s ease;
   position: relative;
   letter-spacing: 0.5px;
+  white-space: nowrap;
+  word-break: keep-all;
 }
 
 .nav-links a:hover {
   color: var(--text-primary);
 }
 
-/* Minimalist Language Switcher */
 .lang-switcher {
   display: flex;
   align-items: center;
@@ -60,9 +68,15 @@
   color: var(--text-muted);
   font-size: 0.85rem;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .lang-option {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  padding: 0;
   cursor: pointer;
   transition: color 0.2s ease;
 }
@@ -84,8 +98,59 @@
   user-select: none;
 }
 
-@media (max-width: 768px) {
+.nav-extra-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.nav-action-btn {
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  padding: 0.32rem 0.5rem;
+  border-radius: var(--border-radius);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  word-break: keep-all;
+  line-height: 1.2;
+  min-width: max-content;
+  flex-shrink: 0;
+}
+
+.nav-action-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--text-secondary);
+  background: var(--bg-hover);
+}
+
+@media (max-width: 1360px) {
   .nav-links {
-    display: none; /* Mobile menu implementation deferred for simplicity */
+    gap: 1.35rem;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .nav-action-btn {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.45rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 1rem;
+  }
+
+  .nav-links {
+    display: none;
   }
 }

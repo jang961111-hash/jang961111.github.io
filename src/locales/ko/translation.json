@@ -6,7 +6,15 @@
     "contact": "Contact",
     "strategy": "Product Strategy",
     "depth": "Tech Depth",
-    "ai": "AI Strategy"
+    "ai": "AI Strategy",
+    "themeLight": "라이트",
+    "themeDark": "다크",
+    "themeToLightAria": "라이트 테마로 전환",
+    "themeToDarkAria": "다크 테마로 전환",
+    "print": "인쇄/PDF",
+    "printAria": "포트폴리오 인쇄 또는 PDF 저장",
+    "languageKoreanAria": "언어를 한국어로 전환",
+    "languageEnglishAria": "언어를 영어로 전환"
   },
   "hero": {
     "name": "장병헌",
@@ -87,6 +95,7 @@
   },
   "framework": {
     "title": "Executive-Level Problem Solving Framework",
+    "subtitle": "기능 중심이 아닌 구조 중심으로 문제를 재정의하고, 검증 가능한 실행 루프를 설계합니다.",
     "steps": {
       "1": {
         "name": "Define Structural Problem",

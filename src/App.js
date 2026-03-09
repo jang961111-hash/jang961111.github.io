@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Navbar from "./components/Navbar";
@@ -37,11 +37,26 @@ const updateMetaTag = (selector, content) => {
   }
 };
 
+const THEME_STORAGE_KEY = "portfolio-theme";
+
+const getInitialTheme = () => {
+  if (typeof window === "undefined") {
+    return "light";
+  }
+
+  const savedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
+  if (savedTheme === "light" || savedTheme === "dark") {
+    return savedTheme;
+  }
+
+  return "light";
+};
+
 // Layout component handles the shared structure
-const Layout = () => {
+const Layout = ({ theme, onToggleTheme, onPrint }) => {
   return (
     <div className="layout">
-      <Navbar />
+      <Navbar theme={theme} onToggleTheme={onToggleTheme} onPrint={onPrint} />
       <main>
         <Hero />
         <About />
@@ -58,7 +73,7 @@ const Layout = () => {
 };
 
 // Route component handles locale sync
-const LocaleRoute = ({ lang }) => {
+const LocaleRoute = ({ lang, theme, onToggleTheme, onPrint }) => {
   const { i18n } = useTranslation();
   
   useEffect(() => {
@@ -81,15 +96,53 @@ const LocaleRoute = ({ lang }) => {
     updateMetaTag('meta[name="twitter:description"]', metadata.description);
   }, [lang]);
 
-  return <Layout />;
+  return <Layout theme={theme} onToggleTheme={onToggleTheme} onPrint={onPrint} />;
 };
 
 function App() {
+  const [theme, setTheme] = useState(getInitialTheme);
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    window.localStorage.setItem(THEME_STORAGE_KEY, theme);
+
+    updateMetaTag('meta[name="theme-color"]', theme === "dark" ? "#050505" : "#ffffff");
+    updateMetaTag('meta[name="color-scheme"]', theme === "dark" ? "dark light" : "light dark");
+  }, [theme]);
+
+  const handleToggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+  };
+
+  const handlePrint = () => {
+    window.print();
+  };
+
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<LocaleRoute lang="ko" />} />
-        <Route path="/en" element={<LocaleRoute lang="en" />} />
+        <Route
+          path="/"
+          element={
+            <LocaleRoute
+              lang="ko"
+              theme={theme}
+              onToggleTheme={handleToggleTheme}
+              onPrint={handlePrint}
+            />
+          }
+        />
+        <Route
+          path="/en"
+          element={
+            <LocaleRoute
+              lang="en"
+              theme={theme}
+              onToggleTheme={handleToggleTheme}
+              onPrint={handlePrint}
+            />
+          }
+        />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>

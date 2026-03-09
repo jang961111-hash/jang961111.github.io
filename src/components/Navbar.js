@@ -3,13 +3,15 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ theme, onToggleTheme, onPrint }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
 
   const isKorean = location.pathname === '/';
+  const nextThemeLabel = theme === 'dark' ? t('nav.themeLight') : t('nav.themeDark');
+  const nextThemeAriaLabel = theme === 'dark' ? t('nav.themeToLightAria') : t('nav.themeToDarkAria');
 
   const switchLanguage = (lang, e) => {
     e.preventDefault();
@@ -50,20 +52,45 @@ const Navbar = () => {
           <li><a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>{t('nav.contact')}</a></li>
           <li>
             <div className="lang-switcher">
-              <span 
-                className={`lang-option ${isKorean ? 'active' : ''}`} 
+              <button
+                type="button"
+                className={`lang-option ${isKorean ? 'active' : ''}`}
                 onClick={(e) => switchLanguage('ko', e)}
+                aria-label={t('nav.languageKoreanAria')}
               >
                 KR
-              </span> 
-              <span className="lang-divider">|</span> 
-              <span 
-                className={`lang-option ${!isKorean ? 'active' : ''}`} 
+              </button>
+              <span className="lang-divider">|</span>
+              <button
+                type="button"
+                className={`lang-option ${!isKorean ? 'active' : ''}`}
                 onClick={(e) => switchLanguage('en', e)}
+                aria-label={t('nav.languageEnglishAria')}
               >
                 EN
-              </span>
+              </button>
             </div>
+          </li>
+
+          <li className="nav-extra-actions">
+            <button
+              type="button"
+              className="nav-action-btn"
+              onClick={onToggleTheme}
+              aria-label={nextThemeAriaLabel}
+              title={nextThemeAriaLabel}
+            >
+              {nextThemeLabel}
+            </button>
+            <button
+              type="button"
+              className="nav-action-btn"
+              onClick={onPrint}
+              aria-label={t('nav.printAria')}
+              title={t('nav.printAria')}
+            >
+              {t('nav.print')}
+            </button>
           </li>
         </ul>
       </div>

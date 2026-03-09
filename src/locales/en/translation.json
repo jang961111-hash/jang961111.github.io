@@ -6,7 +6,15 @@
     "contact": "Contact",
     "strategy": "Product Strategy",
     "depth": "Tech Depth",
-    "ai": "AI Strategy"
+    "ai": "AI Strategy",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeToLightAria": "Switch to light theme",
+    "themeToDarkAria": "Switch to dark theme",
+    "print": "Print/PDF",
+    "printAria": "Print portfolio as PDF",
+    "languageKoreanAria": "Switch language to Korean",
+    "languageEnglishAria": "Switch language to English"
   },
   "hero": {
     "name": "Byeongheon Jang",
@@ -87,6 +95,7 @@
   },
   "framework": {
     "title": "Executive-Level Problem Solving Framework",
+    "subtitle": "I reframe problems at the structural level and design execution loops that can be validated early.",
     "steps": {
       "1": {
         "name": "Define Structural Problem",
