@@ -1,13 +1,18 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import useScrollReveal from '../hooks/useScrollReveal';
 import './Section.css'; // Reusable section styles
 
 const About = () => {
   const { t } = useTranslation();
+  const { elementRef, isVisible } = useScrollReveal();
 
   return (
     <section id="about" className="section">
-      <div className="section-container">
+      <div 
+        ref={elementRef} 
+        className={`section-container reveal-base ${isVisible ? 'reveal-visible' : ''}`}
+      >
         <h2 className="section-title">
           <span className="text-highlight">01.</span> {t('identity.title')}
         </h2>

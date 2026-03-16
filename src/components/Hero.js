@@ -1,6 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import profilePhoto from '../assets/images/id-photo.jpg';
+import profilePhoto from '../assets/images/id-photo.webp';
+import profilePhotoJpg from '../assets/images/id-photo.jpg';
+import resumeKo from '../assets/docs/resume_ko.pdf';
+import resumeEn from '../assets/docs/resume_en.pdf';
 import './Hero.css';
 
 const Hero = () => {
@@ -20,13 +23,18 @@ const Hero = () => {
           </div>
           <div className="hero-portrait-shell">
             <div className="hero-portrait-frame">
-              <img
-                className="hero-portrait"
-                src={profilePhoto}
-                alt={portraitAlt}
-                loading="eager"
-                decoding="async"
-              />
+              <picture>
+                <source srcSet={profilePhoto} type="image/webp" />
+                <source srcSet={profilePhotoJpg} type="image/jpeg" />
+                <img
+                  className="hero-portrait"
+                  src={profilePhotoJpg}
+                  alt={portraitAlt}
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -35,6 +43,16 @@ const Hero = () => {
         <div className="hero-cta">
           <a href="#projects" className="cta-button primary">{t('hero.viewProjects')}</a>
           <a href="#contact" className="cta-button secondary">{t('hero.getInTouch')}</a>
+          <a
+            href={i18n.language === 'ko' ? resumeKo : resumeEn}
+            className="cta-button secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+            download={i18n.language === 'ko' ? 'Jang-Byeong-Heon_TPM_Resume_KO.pdf' : 'Jang-Byeong-Heon_TPM_Resume_EN.pdf'}
+            aria-label={t('hero.downloadResumeAria')}
+          >
+            {t('hero.downloadResume')}
+          </a>
         </div>
       </div>
     </section>

@@ -1,65 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
-@import '@fontsource/jetbrains-mono/400.css';
-@import '@fontsource/jetbrains-mono/700.css';
 
-:root {
-  /* Default theme: light (same structure, inverted from dark) */
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8f8f8;
-  --bg-tertiary: #e6e6e6;
-  --bg-hover: #f1f1f1;
-  --bg-pattern-dot: #e9e9e9;
-
-  --text-primary: #050505;
-  --text-secondary: #404040;
-  --text-muted: #707070;
-
-  --accent-primary: #050505;
-  --accent-muted: #707070;
-  --border-subtle: #d8d8d8;
-  --nav-bg: rgba(255, 255, 255, 0.9);
-  --portrait-border: rgba(17, 17, 17, 0.12);
-  --portrait-border-hover: rgba(17, 17, 17, 0.2);
-  --portrait-grad-top: rgba(17, 17, 17, 0.06);
-  --portrait-grad-bottom: rgba(17, 17, 17, 0.015);
-  --portrait-shadow: rgba(0, 0, 0, 0.16);
-  --portrait-shadow-hover: rgba(0, 0, 0, 0.22);
-
-  /* Layout */
-  --nav-height: 80px;
-  --border-radius: 4px;
-  color-scheme: light;
-}
-
-[data-theme='dark'] {
-  --bg-primary: #050505;
-  --bg-secondary: #0f0f0f;
-  --bg-tertiary: #1a1a1a;
-  --bg-hover: #1f1f1f;
-  --bg-pattern-dot: #1a1a1a;
-
-  --text-primary: #f0f0f0;
-  --text-secondary: #a0a0a0;
-  --text-muted: #666666;
-
-  --accent-primary: #ffffff;
-  --accent-muted: #4a4a4a;
-  --border-subtle: #2a2a2a;
-  --nav-bg: rgba(5, 5, 5, 0.85);
-  --portrait-border: rgba(255, 255, 255, 0.08);
-  --portrait-border-hover: rgba(255, 255, 255, 0.16);
-  --portrait-grad-top: rgba(255, 255, 255, 0.08);
-  --portrait-grad-bottom: rgba(255, 255, 255, 0.02);
-  --portrait-shadow: rgba(0, 0, 0, 0.35);
-  --portrait-shadow-hover: rgba(0, 0, 0, 0.42);
-  color-scheme: dark;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 html {
   scroll-behavior: smooth;
@@ -116,9 +55,96 @@ ul {
   letter-spacing: -0.5px;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/700.css';
+
+:root {
+  /* Default theme: light (Soft, clean, and professional PM look) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #fbfbfc;
+  --bg-tertiary: #f1f3f5;
+  --bg-hover: #f8f9fa;
+  --bg-pattern-dot: #e9ecef;
+
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --text-muted: #4b5563;
+
+  /* Executive AI Blue accent */
+  --accent-primary: #2563eb;
+  --accent-secondary: #3b82f6;
+  --accent-muted: #93c5fd;
+  
+  --border-subtle: #e5e7eb;
+  --nav-bg: rgba(255, 255, 255, 0.85);
+  
+  /* Softer shadows for depth and trust */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  --portrait-border: rgba(17, 17, 17, 0.08);
+  --portrait-border-hover: rgba(37, 99, 235, 0.3);
+  --portrait-grad-top: rgba(243, 244, 246, 0.8);
+  --portrait-grad-bottom: rgba(243, 244, 246, 0.2);
+  --portrait-shadow: var(--shadow-md);
+  --portrait-shadow-hover: var(--shadow-lg);
+
+  /* Layout */
+  --nav-height: 80px;
+  --border-radius-sm: 6px;
+  --border-radius: 12px;
+  --border-radius-lg: 20px;
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  /* Premium Dark theme for PMs (Deep, not stark) */
+  --bg-primary: #0f1115;
+  --bg-secondary: #16181d;
+  --bg-tertiary: #1f2229;
+  --bg-hover: #262931;
+  --bg-pattern-dot: #1f2229;
+
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+
+  /* Vibrant AI Blue for dark mode */
+  --accent-primary: #3b82f6;
+  --accent-secondary: #60a5fa;
+  --accent-muted: #1e3a8a;
+  
+  --border-subtle: #272a33;
+  --nav-bg: rgba(15, 17, 21, 0.85);
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+
+  --portrait-border: rgba(255, 255, 255, 0.06);
+  --portrait-border-hover: rgba(59, 130, 246, 0.4);
+  --portrait-grad-top: rgba(31, 34, 41, 0.8);
+  --portrait-grad-bottom: rgba(31, 34, 41, 0.2);
+  --portrait-shadow: var(--shadow-md);
+  --portrait-shadow-hover: var(--shadow-lg);
+  
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 @page {
   size: A4;
-  margin: 14mm 12mm;
+  margin: 10mm 9mm;
 }
 
 @media print {
@@ -157,8 +183,8 @@ ul {
   body {
     background: #ffffff !important;
     color: var(--text-primary) !important;
-    font-size: 11pt;
-    line-height: 1.45;
+    font-size: 10pt;
+    line-height: 1.35;
   }
 
   body {
@@ -166,8 +192,17 @@ ul {
   }
 
   .navbar,
-  .hero-cta {
+  .hero-actions,
+  .contact-buttons,
+  .scroll-progress-container,
+  .scroll-to-top {
     display: none !important;
+  }
+
+  .reveal-base,
+  .reveal-visible {
+    opacity: 1 !important;
+    transform: none !important;
   }
 
   main {
@@ -177,7 +212,7 @@ ul {
 
   .hero-section {
     min-height: auto !important;
-    padding: 0 0 8mm !important;
+    padding: 0 0 5mm !important;
     border-bottom: 1px solid var(--border-subtle) !important;
   }
 
@@ -185,20 +220,27 @@ ul {
     max-width: 100% !important;
   }
 
+  .hero-facts,
+  .hero-quick-links-grid,
+  .project-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 2.5mm !important;
+  }
+
   .section {
     min-height: auto !important;
-    padding: 8mm 0 !important;
-    break-inside: avoid;
-    page-break-inside: avoid;
+    padding: 4mm 0 !important;
+    break-inside: auto;
+    page-break-inside: auto;
   }
 
   .contact-section {
     max-width: 100% !important;
-    padding: 8mm 0 0 !important;
+    padding: 4mm 0 0 !important;
   }
 
   .footer-content {
-    margin-top: 8mm !important;
+    margin-top: 5mm !important;
   }
 
   .structural-card,
@@ -212,6 +254,52 @@ ul {
   .structural-card {
     border-color: var(--border-subtle) !important;
     background: #ffffff !important;
+    padding: 3.5mm !important;
+    margin-bottom: 2.5mm !important;
+  }
+
+  .timeline-item {
+    margin-bottom: 3mm !important;
+  }
+
+  .timeline-content .date {
+    margin-bottom: 1.3mm !important;
+  }
+
+  .task-list {
+    font-size: 9.4pt !important;
+  }
+
+  .task-list li {
+    margin-bottom: 0.9mm !important;
+  }
+
+  .section-title {
+    margin-bottom: 3mm !important;
+  }
+
+  .hero-subtitle {
+    margin-bottom: 3mm !important;
+    line-height: 1.4 !important;
+  }
+
+  .hero-description {
+    margin-top: 2mm !important;
+    margin-bottom: 4mm !important;
+    line-height: 1.4 !important;
+  }
+
+  .hero-role,
+  .hero-fact-label,
+  .hero-quick-link-label,
+  .detail-label {
+    color: var(--text-muted) !important;
+  }
+
+  .about-text p,
+  .timeline-desc,
+  .detail-item p {
+    line-height: 1.35 !important;
   }
 
   .structural-card::before,

@@ -11,6 +11,7 @@ import TechnicalDepth from "./components/TechnicalDepth";
 import AIStrategy from "./components/AIStrategy";
 import ProblemSolving from "./components/ProblemSolving";
 import Contact from "./components/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 const pageMetadata = {
   ko: {
@@ -18,14 +19,14 @@ const pageMetadata = {
     locale: "ko_KR",
     title: "장병헌 | Technical Product Manager",
     description:
-      "장병헌 포트폴리오. 제품 전략, 확장 가능한 플랫폼 설계, AI 의사결정 시스템에 집중하는 Technical Product Manager입니다.",
+      "장병헌 포트폴리오. 구조적으로 문제를 정의하고, 기술적 맥락을 이해한 상태에서 제품 방향과 서비스 경험을 설계하는 Technical Product Manager입니다.",
   },
   en: {
     htmlLang: "en",
     locale: "en_US",
     title: "Byeongheon Jang | Technical Product Manager",
     description:
-      "Portfolio of Byeongheon Jang, a technical product manager focused on product strategy, scalable platforms, and AI decision-support systems.",
+      "Portfolio of Byeongheon Jang, a technical product manager focused on product direction, service structure, and AI-aware decision support.",
   },
 };
 
@@ -68,6 +69,7 @@ const Layout = ({ theme, onToggleTheme, onPrint }) => {
         <Experience />
       </main>
       <Contact />
+      <ScrollToTop />
     </div>
   );
 };

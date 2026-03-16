@@ -1,12 +1,13 @@
 {
   "nav": {
-    "identity": "Identity",
-    "experience": "Experience",
-    "projects": "Core Projects",
-    "contact": "Contact",
-    "strategy": "Product Strategy",
-    "depth": "Tech Depth",
-    "ai": "AI Strategy",
+    "identity": "소개",
+    "experience": "경험",
+    "projects": "프로젝트",
+    "contact": "연락",
+    "strategy": "전략",
+    "depth": "기술",
+    "ai": "AI 전략",
+    "framework": "사고법",
     "themeLight": "라이트",
     "themeDark": "다크",
     "themeToLightAria": "라이트 테마로 전환",
@@ -20,36 +21,48 @@
     "name": "장병헌",
     "greeting": "안녕하세요,",
     "title": "Technical Product Manager",
-    "subtitle": "단순한 기능 구현을 넘어, 플랫폼 단위의 제품 방향성을 정의합니다.\n기술적 구조를 이해하고 AI를 결합하여 의사결정 시스템을 설계하는 PM입니다.",
-    "mission": "시장과 비즈니스의 구조적 문제를 분석하고, 확장 가능한 플랫폼 전략을 수립하여 조직의 장기적인 방향성을 제시합니다.",
+    "subtitle": "기술적 구조를 이해한 상태에서 사용자 문제를 제품 언어로 정리하고,\n확장 가능한 서비스 방향을 고민하는 PM 지향 인재입니다.",
+    "mission": "철학 전공에서 기른 구조적 사고, AI·데이터·경영 교과 경험, 그리고 프로젝트 운영 경험을 바탕으로 기술과 사용자 사이를 연결하는 역할을 만들어가고 있습니다.",
     "viewProjects": "핵심 프로젝트 보기",
-    "getInTouch": "연락하기"
+    "getInTouch": "연락하기",
+    "downloadResume": "이력서 다운로드 (PDF)",
+    "downloadResumeAria": "이력서 PDF 다운로드"
   },
   "identity": {
     "title": "Identity & Product Philosophy",
-    "text1": "철학(Philosophy)이라는 학문적 배경은 저에게 '구조적으로 사고하는 법'과 '근본적인 문제를 정의하는 법'을 훈련시켰습니다. 개별 기능(Feature)이 아닌 전체 제품의 방향성(Product Direction)을 고민하며, 탄탄한 논리 구조가 최종 프로덕트의 비즈니스 가치를 결정한다고 믿습니다.",
-    "text2": "단기적인 문제 해결을 넘어, 무한한 확장성(Scalability)과 플랫폼 관점의 파이프라인 구축을 지향합니다. 의사결정의 추적성(Decision Traceability)과 철저한 리스크 관리를 기반으로, 예측 가능하고 단단한 논리적 비즈니스 구조를 설계합니다.",
-    "text3": "\"I treat AI as a structural redesign of decision systems, not as a feature.\"\n저는 AI를 단순한 부가 기능이 아닌, 기존 의사결정 시스템 흐름의 구조적 재설계(Structural Redesign) 도구로 취급합니다. 엔지니어링 생태계 전반을 다루며 개발 팀과의 오차 없는 커뮤니케이션을 주도하고, 리스크를 엄격히 제어하는 명확한 아키텍처를 기획합니다.",
+    "text1": "철학(Philosophy) 전공은 저에게 구조적으로 사고하는 법과 문제의 본질을 먼저 정의하는 습관을 길러주었습니다. 저는 개별 기능보다 제품이 해결해야 할 구조적 문제와 전체 방향성을 먼저 보려고 합니다.",
+    "text2": "전남대에서 AI·데이터·경영 관련 교과를 함께 경험하며 기술과 서비스, 사용자 맥락을 연결하는 시야를 넓혔습니다. 그래서 기획 단계에서도 데이터 흐름, 상태 관리, 운영 리스크를 함께 고려하려고 합니다.",
+    "text3": "\"I treat AI as a layer for better decisions, not as a gimmick.\"\n실제 프로젝트에서는 사용자 로그를 읽고 막히는 지점을 확인한 뒤, AI의 역할을 과한 자동화보다 더 나은 질문과 더 나은 판단을 돕는 방향으로 설계해왔습니다.",
     "skills_title": "Core Competencies",
     "skills": {
       "platform": "Platform-Oriented Design",
       "decision": "Decision Architecture",
-      "tech": "Technical Comm & Architecture",
-      "ai": "AI as Decision-Support Layer"
+      "tech": "Technical Communication",
+      "ai": "AI as Decision Support"
     }
   },
   "projects": {
-    "title": "Platform Initiatives",
+    "title": "Core Projects",
+    "intro": "대표 프로젝트 한 개를 중심으로, 문제 정의와 설계 의도가 어떻게 연결되었는지 보여드리고자 했습니다.",
     "items": {
       "loggy": {
-        "title": "Loggy: 의사결정의 휘발성을 극복하는 플랫폼 아키텍처 구축",
-        "subtitle": "Git의 브랜치 모델을 차용한 동기/비동기 하이브리드 협업 도구",
-        "role": "Product Leader",
-        "problem": "시장 구조적 문제: 기존 회의 및 협업 툴은 의사결정 추적성(Decision Traceability)이 부재하여, 조직의 핵심 합의 사항(EDR)이 휘발성 채팅창 속으로 사라진다는 한계를 안고 있었습니다.",
-        "insight": "제품 방향성 및 인사이트: 회의 안건을 Git의 Branch처럼 독립적으로 대하고, 합의 과정 및 결과물 채택을 논리적인 Commit으로 다루는 '의사결정 기록 플랫폼'으로 제품의 방향성을 정의했습니다.",
-        "architecture": "플랫폼 아키텍처 설계: 조직의 장기적 책임성을 보장하기 위해, 휘발성 채팅 데이터(WebSockets)와 영구적 결정 기록(REST API)을 완벽히 분리시켜 상태 관리의 복잡성을 통제하고 플랫폼 확장성을 담보했습니다.",
-        "learning": "엔지니어링 얼라인먼트 및 성과: 단순한 프론트엔드 기능 개발이 아닌, 엔지니어링 팀과 플랫폼의 상태 변이 로직을 논의하고, 장기적인 아키텍처 관점에서의 데이터 의존성을 정립하는 제품 리더십을 체득했습니다."
+        "title": "Loggy | 실시간 로그 분석 협업 플랫폼",
+        "summary": "수동 로그 확인 때문에 느려지는 디버깅 과정을 줄이기 위해, 실시간 로그 가시성과 협업 효율을 함께 개선한 프로젝트입니다.",
+        "metrics": {
+          "1": "로그 분석 지연 85% 감소",
+          "2": "초당 5,000건 이상 처리 고려",
+          "3": "협업형 팀 프로젝트"
+        },
+        "problem": "개발팀이 대량 로그를 수동으로 읽는 과정이 길어지면서 원인 파악과 디버깅 속도가 느려지고 있었습니다.",
+        "insight": "문제는 로그 양 자체보다 필요한 맥락을 즉시 파악하기 어려운 가시성 부족에 있다고 보았습니다.",
+        "architecture": "WebSocket 기반 실시간 스트리밍과 구조화된 로그 파이프라인을 결합해, 확인-필터링-판단 흐름이 끊기지 않는 분석 경험을 설계했습니다.",
+        "role": "Product Owner & Frontend Lead | 문제 정의, 사용자 흐름 설계, 프론트엔드 구현, 실시간 확인 경험 설계",
+        "learning": "사용자 pain point를 화면 흐름과 요구사항으로 번역하고, 개발팀과 상태 관리·실시간 처리 구조를 함께 맞춰가는 경험을 쌓았습니다."
       }
+    },
+    "labels": {
+      "role": "담당 역할",
+      "learning": "핵심 테이크어웨이"
     }
   },
   "strategy": {
@@ -57,65 +70,65 @@
     "items": {
       "platform": {
         "title": "Product Direction & Platform > Feature",
-        "desc": "단발성의 점진적 기능(Feature) 추가에 매몰되지 않고, 서비스 생태계와 제품의 거시적 방향성(Direction)을 정의합니다. 전체 시스템의 무한한 확장성(Scalability)과 비즈니스 로직을 고려한 통합 플랫폼 아키텍처를 설계합니다."
+        "desc": "단발성 기능 추가보다, 제품이 어떤 구조적 문제를 풀고 어떤 방향으로 확장되어야 하는지를 먼저 고민합니다. 기능은 방향을 증명하는 수단이어야 한다고 생각합니다."
       },
       "alignment": {
         "title": "Market Insight & Roadmap Mindset",
-        "desc": "시장의 구조적 병목을 고공 시야에서 분석하여 수익 기반 생태계 모델을 기획합니다. 다수의 이해관계자와의 얼라인먼트를 주도하고 네트워크 효과를 극대화할 수 있는 장기적 로드맵을 구축합니다."
+        "desc": "사용자 문제와 운영 환경, 이해관계자 요구를 함께 보고 우선순위를 정합니다. 장기적인 로드맵 관점에서 제품 방향과 실행 단계를 연결하려고 합니다."
       }
     }
   },
   "depth": {
     "title": "Technical Depth as Leverage",
-    "subtitle": "엔지니어링에 대한 체계적 이해는 기믹성 구현 자랑이 아닌, 제품의 구조적 리스크를 줄이는 가장 확실한 전략적 레버리지입니다.",
+    "subtitle": "기술 이해는 구현 자랑이 아니라, 제품 기획 단계에서 리스크를 줄이고 팀 간 소통 비용을 낮추는 레버리지라고 생각합니다.",
     "items": {
       "state": {
         "title": "State Transition & Data Integrity",
-        "desc": "클라이언트와 서버 간의 상호작용 및 데이터 정합성을 유지하기 위한 논리적 구조를 기획하며, 엔지니어링 조직과의 소통 비용 및 기술 부채를 획기적으로 낮춥니다."
+        "desc": "클라이언트와 서버 사이의 상태 변화와 데이터 정합성을 이해하면 요구사항을 더 구체적으로 만들 수 있고, 개발 과정의 오해를 줄일 수 있습니다."
       },
       "realtime": {
         "title": "System-level Risk Reduction",
-        "desc": "실시간 동시성 데이터 파이프라인의 아키텍처를 이해하여, 기획 단계에서 발생할 수 있는 잠재적 운영 리스크를 선제적으로 설계 레이어에서 차단합니다."
+        "desc": "실시간 데이터 흐름과 동시성 구조를 이해하면 운영 단계에서 생길 수 있는 병목이나 불안정 요소를 더 이른 시점에 고려할 수 있습니다."
       }
     }
   },
   "ai": {
     "title": "AI Strategy & Deployment",
-    "subtitle": "AI는 단순한 API 호출이 아닙니다. 비즈니스의 구조적 의사결정 계층(Decision-support layer)을 책임지는 핵심 아키텍처 관점의 전환입니다.",
+    "subtitle": "AI는 기능을 덧붙이는 일이 아니라, 사용자의 의사결정과 행동을 어떻게 더 잘 돕게 만들지에 대한 설계 문제라고 생각합니다.",
     "items": {
       "responsibility": {
-        "title": "Decision-Support & Responsibility Pivot",
-        "desc": "Human-in-the-loop 설계 개념을 도입하여 AI에 대한 과도한 의존성(Overreliance)을 완화합니다. 리스크를 철저히 통제하고 도출된 결과의 설명 가능성(Explainability)을 확보하는 책임감 있는 AI 시스템을 지향합니다."
+        "title": "Decision-Support & Human-in-the-loop",
+        "desc": "AI를 모든 판단의 대체재로 보기보다, 사용자가 더 쉽게 생각하고 결정할 수 있도록 돕는 보조 레이어로 설계하는 편을 선호합니다."
       },
       "integration": {
         "title": "Risk Containment Architecture",
-        "desc": "환각 현상(Hallucination) 등의 잠재적인 파생 변수를 완전히 고립시킬 수 있는 리스크 억제 아키텍처를 추구하며, 기존 시스템의 본질적 책임 범위를 파괴하지 않는 전략적 모듈화를 기획합니다."
+        "desc": "실제 AI 다이어리 프로젝트에서는 사용자 로그를 통해 빈 화면에서 막히는 지점을 확인하고, 꼬리 질문 설계로 평균 일기 글자 수를 두 배까지 늘린 경험이 있습니다."
       }
     }
   },
   "framework": {
     "title": "Executive-Level Problem Solving Framework",
-    "subtitle": "기능 중심이 아닌 구조 중심으로 문제를 재정의하고, 검증 가능한 실행 루프를 설계합니다.",
+    "subtitle": "기능 중심이 아닌 구조 중심으로 문제를 다시 정의하고, 빠르게 검증할 수 있는 실행 루프를 설계합니다.",
     "steps": {
       "1": {
         "name": "Define Structural Problem",
-        "desc": "현상의 이면에 존재하는 구조적 병목과 시장의 본질적인 문제를 과감히 재정의합니다."
+        "desc": "겉으로 드러난 현상보다, 그 뒤에 있는 구조적 병목과 사용자 불편을 먼저 찾습니다."
       },
       "2": {
         "name": "Analyze System-Level Risk",
-        "desc": "기술적 의존성을 직시하고 시스템 전체에 미칠 파생 레이어의 잠재적 리스크를 분석합니다."
+        "desc": "기술적 제약과 운영 리스크를 함께 보면서, 어떤 문제가 뒤에서 더 크게 커질 수 있는지 점검합니다."
       },
       "3": {
         "name": "Design Scalable Model",
-        "desc": "단기적 지표 상승이 아닌 장기적 로드맵을 기반으로, 무한한 확장이 가능한 플랫폼 비즈니스 논리를 설계합니다."
+        "desc": "당장의 해결책에 그치지 않고, 이후 기능과 사용자 수가 늘어나도 유지될 수 있는 모델을 먼저 생각합니다."
       },
       "4": {
         "name": "Validate with Minimal Structure",
-        "desc": "가장 핵심적인 뼈대(Minimal Structure)를 추출하여 한정된 자원 내에서 초기 비즈니스 가설을 검증합니다."
+        "desc": "가장 핵심적인 구조만 먼저 구현해 빠르게 검증하고, 실제 반응과 데이터를 바탕으로 다음 단계를 정합니다."
       },
       "5": {
         "name": "Expand with Platform Lens",
-        "desc": "검증된 논리를 바탕으로 데이터 거버넌스를 확보하며, 인접한 수익 기반 비즈니스 도메인으로 파이프라인을 확장합니다."
+        "desc": "검증된 논리를 바탕으로 인접한 기능과 사용자 맥락까지 확장할 수 있는지 살펴봅니다."
       }
     }
   },
@@ -124,42 +137,42 @@
     "jobs": {
       "ssafy": {
         "title": "Cross-Functional Collaboration & Platform Thinking",
-        "company": "SSAFY (삼성 청년 SW 아카데미)",
-        "period": "2023 - PRESENT",
-        "desc1": "알고리즘적 논리 구조와 제품 기획(Product Thinking)을 결합하여 고도화된 소프트웨어 생태계를 집중적으로 이해함.",
-        "desc2": "다수의 애자일 프로젝트에서 리더 역할을 수행하며, 엔지니어링 팀의 얼라인먼트를 이끌고 플랫폼 확장성을 고려한 아키텍처를 설계함.",
-        "desc3": "탁월한 프로덕트 방향성 설정과 구조적 시스템 모델링 역량을 인정받아 교내 우수 프로젝트상 수상."
+        "company": "SSAFY",
+        "period": "2025 - PRESENT",
+        "desc1": "알고리즘, 웹 개발, AI 서비스 프로젝트를 수행하며 기술 의사결정 과정을 직접 경험했습니다.",
+        "desc2": "여러 프로젝트에서 문제 정의, 역할 조율, 화면 흐름 설계, 개발 협업을 함께 맡으며 제품 관점을 넓혔습니다.",
+        "desc3": "실시간 로그 분석, AI 서비스 설계, 해커톤 프로젝트를 통해 기획과 구현을 연결하는 경험을 쌓고 있습니다."
       },
       "marines": {
         "title": "Decision Clarity Under Extreme Pressure",
         "company": "대한민국 해병대",
-        "period": "2017 - 2018",
-        "desc1": "극한의 한계 상황에서도 명확한 지휘 규칙과 철저한 규율을 통해 책임을 완수하는 거시적 안목과 실행력을 배양함.",
-        "desc2": "고도로 구조화된 체계 시스템 안에서, 위기 상황 대응 시 혼선 없는 의사결정 절차와 우선순위 판단의 핵심성을 체득함."
+        "period": "2016 - 2018",
+        "desc1": "극한 상황에서도 우선순위와 책임을 분명히 하는 태도를 익혔습니다.",
+        "desc2": "미 해병대 합동훈련(KMEP) 기간 동안 통역 역할을 수행하며 설명과 조율의 중요성을 배웠습니다."
       },
       "jaguar": {
         "title": "Customer Experience System Operation",
-        "company": "천일 오토모빌 (재규어 랜드로버 발레 총괄 매니저)",
+        "company": "천일 오토모빌 (재규어 랜드로버)",
         "period": "2016",
-        "desc1": "프리미엄 VIP 고객 응대 및 차량 배치 동선의 전반적 시스템 뷰(System View)를 관장하며 현장 운영의 큰 흐름을 총괄함.",
-        "desc2": "서비스 수요의 병목 구간을 분석하여 운영 흐름을 파격적으로 재설계, 전체 운영 리소스 효율성 및 고객 체류 시간 품질을 대폭 개선함."
+        "desc1": "VIP 고객 응대와 차량 동선을 운영하며 현장 서비스의 전체 흐름을 관리했습니다.",
+        "desc2": "병목 지점을 파악하고 동선과 응대 절차를 개선해 운영 효율을 높였습니다."
       },
       "restaurant": {
         "title": "Business Model & Revenue Structure Thinking",
-        "company": "F&B 개인 사업장 실무 총괄 담당",
+        "company": "F&B 개인 사업장 운영 실무",
         "period": "2015",
-        "desc1": "매장 오픈 초기 기획부터 운영 시스템 정착에 이르기까지 비즈니스 모델(BM) 전반의 짙은 책임감과 수익 구조 사고방식을 함양함.",
-        "desc2": "운영 파이프라인의 잠재적 확장성(Scalability)을 고려하여 수요 데이터를 바탕으로 실물 동선을 재정비하는 운영 리더십 발휘."
+        "desc1": "초기 운영, 고객 응대, 동선 관리 등 현장 전반을 맡으며 서비스 운영의 기본을 익혔습니다.",
+        "desc2": "수요와 운영 흐름을 함께 보며 서비스 품질과 효율을 맞추는 감각을 키웠습니다."
       }
     }
   },
   "contact": {
     "title": "Contact",
     "subtitle": "CONTACT",
-    "description": "I'm always open to discussing new opportunities, platform strategies, and product leadership roles.",
-    "button": "Say Hello",
+    "description": "새로운 기회, 제품 전략, AI 기반 서비스 기획에 대해 언제든 이야기 나눌 수 있습니다.",
+    "button": "메일 보내기",
     "github": "GitHub",
     "email": "Email",
-    "linkedin": "LinkedIn"
+    "resume": "PDF"
   }
 }

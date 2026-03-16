@@ -7,6 +7,7 @@
     "strategy": "Product Strategy",
     "depth": "Tech Depth",
     "ai": "AI Strategy",
+    "framework": "Framework",
     "themeLight": "Light",
     "themeDark": "Dark",
     "themeToLightAria": "Switch to light theme",
@@ -20,36 +21,48 @@
     "name": "Byeongheon Jang",
     "greeting": "Hello, I am",
     "title": "Technical Product Manager",
-    "subtitle": "I define product direction, design scalable platforms,\nand integrate AI as a structural decision layer.",
-    "mission": "Architecting high-impact platforms and systemic strategies targeted for global enterprise ecosystems.",
+    "subtitle": "I organize user problems into product language with technical context in mind,\nand I care about service direction that can scale without losing clarity.",
+    "mission": "My portfolio is built on structural thinking from philosophy, coursework across AI, data, and business, and hands-on experience connecting planning with implementation.",
     "viewProjects": "View Core Projects",
-    "getInTouch": "Contact"
+    "getInTouch": "Contact",
+    "downloadResume": "Download Resume (PDF)",
+    "downloadResumeAria": "Download resume PDF"
   },
   "identity": {
     "title": "Identity & Product Philosophy",
-    "text1": "My academic roots in Philosophy fundamentally trained me in structural reasoning—equipping me to identify core systemic flaws rather than chasing surface-level features. I advocate for profound product direction, firmly believing that robust logical scaffolding dictates a product's market resonance and long-term viability.",
-    "text2": "I operate with an uncompromising platform scalability mindset. Moving far beyond localized functionalities, I prioritize decision traceability, ecosystem expansion, and rigorous risk-aware design. My central objective is to build unshakeable, predictable product architectures that unconditionally safeguard organizational accountability.",
-    "text3": "\"I treat AI as a structural redesign of decision systems, not as a feature.\"\nLeveraging profound technical acumen, I maintain seamless cross-functional alignment with engineering divisions. This ensures our strategic vision is translated flawlessly into concrete logic without falling victim to hype-driven engineering, positioning AI as a highly deliberate decision-support layer.",
+    "text1": "My background in Philosophy trained me to define the core structure of a problem before jumping to features. I tend to start from the direction a product should take and the underlying issue it should solve.",
+    "text2": "Coursework across AI, data, and business expanded that mindset into a more practical one. I try to consider service context, data flow, and operational risk together rather than treating them as separate concerns.",
+    "text3": "\"I treat AI as a layer for better decisions, not as a gimmick.\"\nIn practice, I have used user logs to identify where people get stuck and designed AI interactions to support better questions and better decisions rather than relying on automation for its own sake.",
     "skills_title": "Core Competencies",
     "skills": {
       "platform": "Platform-Oriented Design",
       "decision": "Decision Architecture",
-      "tech": "Technical Comm & Architecture",
-      "ai": "AI as Decision-Support Layer"
+      "tech": "Technical Communication",
+      "ai": "AI as Decision Support"
     }
   },
   "projects": {
-    "title": "Platform Initiatives",
+    "title": "Core Projects",
+    "intro": "I chose to focus on one representative project and show how problem framing and design intent came together in practice.",
     "items": {
       "loggy": {
-        "title": "Loggy: Resolving the Volatility of Decision Architectures",
-        "subtitle": "A Git-inspired synchronous/asynchronous collaborative platform.",
-        "role": "Product Leader",
-        "problem": "Market Structural Flaw: Current collaboration tools inherently lack decision traceability. Critical organizational consensus and Engineering Decision Records (EDRs) fade immediately into unstructured, ephemeral chat streams, crippling long-term accountability.",
-        "insight": "Product Direction Insight: I conceptualized a Git-inspired operational model. By treating specific meeting agendas as independent 'branches' and finalized decisions as 'commits,' we radically redefined the collaborative structure into a permanent decision-record platform.",
-        "architecture": "Platform Design Decision: Engineered strict state isolation, definitively decoupling ephemeral interactions (WebSockets) from the persistent organizational decision logic (REST). This guaranteed absolute data integrity while paving the way for massive concurrent scaling.",
-        "learning": "Engineering Alignment & Execution: Directed cross-functional stakeholders through complex negotiations. Eschewed frontend trivialities to focus obsessively on state transition logic, proving that genuine platform leadership lies in orchestrating scalable system dependencies."
+        "title": "Loggy | Real-Time Log Analysis Collaboration Platform",
+        "summary": "This project was designed to reduce slow debugging cycles by improving real-time log visibility and team collaboration.",
+        "metrics": {
+          "1": "85% reduction in log analysis latency",
+          "2": "Designed with 5,000+ logs per second in mind",
+          "3": "Collaborative team project"
+        },
+        "problem": "Developers were spending too much time manually reading large volumes of logs, which slowed root-cause analysis and debugging.",
+        "insight": "The issue was not simply log volume. The deeper problem was the lack of visibility into the right context at the right moment.",
+        "architecture": "I designed the experience around WebSocket-based streaming and a structured log pipeline so that review, filtering, and decision-making could happen in one continuous flow.",
+        "role": "Product Owner & Frontend Lead | Problem definition, user flow design, frontend implementation, and real-time review experience",
+        "learning": "This project strengthened my ability to translate a developer pain point into screen flow, requirements, and implementation discussions with the engineering team."
       }
+    },
+    "labels": {
+      "role": "Role",
+      "learning": "Key Takeaway"
     }
   },
   "strategy": {
@@ -57,65 +70,65 @@
     "items": {
       "platform": {
         "title": "Product Direction & Platform > Feature",
-        "desc": "I aggressively reject disjointed feature-factory mentalities. I steer overarching product direction by modeling ecosystem-level state transitions, evaluating market structural dynamics, and architecting cohesive platforms engineered for infinite scalability."
+        "desc": "I try not to get trapped in one-off feature expansion. I prefer starting from the structural problem a product should solve and the direction it should grow toward."
       },
       "alignment": {
-        "title": "Ecosystem Scalability & Alignment",
-        "desc": "Anchored in a relentless long-term roadmap mindset and profound revenue structure thinking, I consistently translate deeply complex business imperatives into undeniable engineering specifications, driving stakeholder alignment and seeding powerful network effects."
+        "title": "Market Insight & Roadmap Mindset",
+        "desc": "I look at user pain, operating context, and stakeholder needs together when setting priorities. My goal is to connect near-term execution with a longer-term roadmap."
       }
     }
   },
   "depth": {
     "title": "Technical Depth as Leverage",
-    "subtitle": "Structural engineering literacy operates not to boast implementation, but to wield profound leverage in systemic risk reduction.",
+    "subtitle": "Technical literacy matters to me not as a way to boast implementation, but as a way to reduce product risk and lower communication cost across teams.",
     "items": {
       "state": {
-        "title": "State Transition Modeling",
-        "desc": "Mastery over abstracting complex data integrity logic across client-server boundaries, vastly mitigating miscommunication latency and neutralizing technical debt before the very first line of code is written."
+        "title": "State Transition & Data Integrity",
+        "desc": "Understanding how state changes and data consistency work between client and server helps me make requirements more concrete and reduces avoidable misalignment during development."
       },
       "realtime": {
         "title": "System-level Risk Reduction",
-        "desc": "Fluent technical communication fortified by an intrinsic understanding of concurrent, real-time architectures, enabling the aggressive preemption of operational bottlenecks during the foundational architectural design phase."
+        "desc": "When I understand real-time data flow and concurrency at a practical level, I can think earlier about the bottlenecks and instability that may appear later in operation."
       }
     }
   },
   "ai": {
     "title": "AI Strategy & Deployment",
-    "subtitle": "AI is not a trendy appendage—it is a foundational structural integration. I deploy human-in-the-loop architectures that forcefully mitigate algorithmic overreliance.",
+    "subtitle": "I see AI less as a flashy add-on and more as a design question about how to support better user decisions and better user behavior.",
     "items": {
       "responsibility": {
-        "title": "Decision-Support & Responsibility Pivot",
-        "desc": "I position AI strictly as a hyper-accountable decision-support layer. By systematically instituting explainability-aware paradigms and rigid human-in-the-loop structures, I shift responsibility boundaries safely and ethically within enterprise ecosystems."
+        "title": "Decision-Support & Human-in-the-loop",
+        "desc": "I prefer designing AI as a support layer that helps people think and decide more clearly, rather than as a substitute for every piece of judgment."
       },
       "integration": {
         "title": "Risk Containment Architecture",
-        "desc": "Orchestrating comprehensive structural transformations that definitively isolate generative variance. I focus entirely on strategic architecture, ensuring AI capabilities are fully decoupled to contain unpredictable behavioral risks within enterprise-grade bounds."
+        "desc": "In one AI diary project, I used user logs to identify the blank-screen moment where users stalled and redesigned the experience with follow-up questions, which doubled the average diary length."
       }
     }
   },
   "framework": {
     "title": "Executive-Level Problem Solving Framework",
-    "subtitle": "I reframe problems at the structural level and design execution loops that can be validated early.",
+    "subtitle": "I try to reframe problems structurally and build execution loops that can be validated early.",
     "steps": {
       "1": {
         "name": "Define Structural Problem",
-        "desc": "Interrogate surface-level symptoms to aggressively define the absolute structural market bottleneck."
+        "desc": "I start by looking past surface symptoms to find the deeper bottleneck and user friction underneath."
       },
       "2": {
         "name": "Analyze System-Level Risk",
-        "desc": "Evaluate technical dependencies and map unmitigated downstream systemic risks without illusion."
+        "desc": "I review technical constraints and operating risks together to understand what may grow into a larger issue later."
       },
       "3": {
         "name": "Design Scalable Model",
-        "desc": "Pre-engineer scalable, platform-level business logic specifically crafted to absorb long-term, exponential ecosystem expansion."
+        "desc": "I try to think beyond the immediate fix and shape a model that can still hold as features and usage expand."
       },
       "4": {
         "name": "Validate with Minimal Structure",
-        "desc": "Ruthlessly isolate the most critical proof-of-concept required to secure pristine validation points against constrained organizational resources."
+        "desc": "I prefer validating the smallest meaningful structure first, then using actual response and data to decide the next step."
       },
       "5": {
         "name": "Expand with Platform Lens",
-        "desc": "Accelerate growth pipelines by projecting validated structural logic confidently into adjacent revenue-generating domains."
+        "desc": "Once the logic is validated, I look at how that structure can extend into adjacent user needs and product contexts."
       }
     }
   },
@@ -124,42 +137,42 @@
     "jobs": {
       "ssafy": {
         "title": "Cross-Functional Collaboration & Platform Thinking",
-        "company": "SSAFY (Samsung SW Academy For Youth)",
-        "period": "2023 - PRESENT",
-        "desc1": "Synthesized rigid algorithmic logic with advanced product thinking throughout an intensive, full-time structural incubator environment.",
-        "desc2": "Exercised product leadership across multiple high-velocity agile sprints, continuously driving engineering alignment and architecting platforms with unyielding scalability.",
-        "desc3": "Recognized with the Excellence Project Award for demonstrating executive-level product direction and profound structural modeling potential."
+        "company": "SSAFY",
+        "period": "2025 - PRESENT",
+        "desc1": "I have been working through algorithms, web development, and AI service projects while gaining first-hand experience in technical decision-making.",
+        "desc2": "Across several projects, I have handled problem framing, role coordination, screen flow design, and collaboration with developers.",
+        "desc3": "Projects around real-time logs, AI interaction design, and hackathons have helped me connect planning with implementation."
       },
       "marines": {
         "title": "Decision Clarity Under Extreme Pressure",
         "company": "Republic of Korea Marine Corps",
-        "period": "2017 - 2018",
-        "desc1": "Internalized ironclad discipline and overarching accountability within severely constrained, zero-margin-for-error operational environments.",
-        "desc2": "Mastered the absolute necessity of hyper-structured chain-of-command protocols and instantaneous decision clarity during unpredictable crises."
+        "period": "2016 - 2018",
+        "desc1": "I learned to make priorities and responsibility explicit even in high-pressure situations.",
+        "desc2": "During KMEP joint training, I supported communication as an interpreter and learned the value of clear explanation and coordination."
       },
       "jaguar": {
         "title": "Customer Experience System Operation",
-        "company": "Jaguar Land Rover (Chunil Automobile)",
+        "company": "Chunil Automobile (Jaguar Land Rover)",
         "period": "2016",
-        "desc1": "Directed comprehensive VIP customer experience pipelines, forcefully maintaining a persistent, high-altitude system view over real-time operational flows.",
-        "desc2": "Continuously interrogated and restructured field movement systems to immediately eradicate bottlenecks and maximize operational throughput."
+        "desc1": "I managed VIP customer response and vehicle flow with an end-to-end view of the on-site service experience.",
+        "desc2": "By identifying bottlenecks and improving movement and response procedures, I helped raise operational efficiency."
       },
       "restaurant": {
         "title": "Business Model & Revenue Structure Thinking",
-        "company": "Private Enterprise (F&B)",
+        "company": "F&B Private Business Operations",
         "period": "2015",
-        "desc1": "Shouldered absolute ownership of end-to-end business models, ingraining a deep-seated responsibility for foundational revenue structures from inception.",
-        "desc2": "Exhibited aggressive operational scalability by optimizing physical demand pipelines in direct response to highly volatile market traffic assumptions."
+        "desc1": "I handled early-stage operations, customer response, and physical flow, which gave me a grounded sense of service operations.",
+        "desc2": "That experience helped me develop a practical instinct for balancing service quality with operational efficiency."
       }
     }
   },
   "contact": {
     "title": "Contact",
     "subtitle": "CONTACT",
-    "description": "I am openly seeking discussions regarding strategic platform challenges, product direction roles, and structural enterprise scalability.",
+    "description": "I am always open to conversations about new opportunities, product strategy, and AI-enabled service design.",
     "button": "Say Hello",
     "github": "GitHub",
     "email": "Email",
-    "linkedin": "LinkedIn"
+    "resume": "PDF"
   }
 }
