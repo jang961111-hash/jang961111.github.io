@@ -23,6 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "postbuild": "node scripts/generate_route_aliases.js",
+    "smoke:build": "node scripts/smoke_check.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "generate:pdf": "node scripts/generate_pdfs.js"
