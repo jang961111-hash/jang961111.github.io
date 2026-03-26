@@ -68,6 +68,44 @@ beforeEach(async () => {
 });
 
 describe("App routing flows", () => {
+  test("renders localized SSAFY proof photos on both home routes", async () => {
+    const koreanView = renderAtRoute("/");
+
+    await waitFor(() => {
+      expect(
+        screen.getByAltText("SSAFY 프로젝트 세션에서 팀원들과 협업하는 모습")
+      ).toBeTruthy();
+    });
+    expect(
+      screen.getByAltText("SSAFY 로고 앞에서 촬영한 팀 사진")
+    ).toBeTruthy();
+    expect(
+      screen.getByText(
+        "알고리즘, 웹, AI 프로젝트를 거치며 협업 리듬과 실행 구조를 익힌 SSAFY 현장입니다."
+      )
+    ).toBeTruthy();
+
+    koreanView.unmount();
+
+    renderAtRoute("/en/");
+
+    await waitFor(() => {
+      expect(
+        screen.getByAltText(
+          "Collaborating with teammates during a SSAFY project session"
+        )
+      ).toBeTruthy();
+    });
+    expect(
+      screen.getByAltText("SSAFY team photo in front of the SSAFY sign")
+    ).toBeTruthy();
+    expect(
+      screen.getByText(
+        "A working snapshot from SSAFY where I learned collaboration rhythms and execution structure across algorithm, web, and AI projects."
+      )
+    ).toBeTruthy();
+  });
+
   test("navigates from the English home to a project detail page and back", async () => {
     renderAtRoute("/en/");
 

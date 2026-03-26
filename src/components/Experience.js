@@ -1,6 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import useScrollReveal from '../hooks/useScrollReveal';
+import ssafyCollaborationPhoto from "../assets/images/ssafy-collaboration.jpg";
+import ssafyTeamPhoto from "../assets/images/ssafy-team.jpg";
 import "./Section.css";
 
 const Experience = () => {
@@ -21,6 +23,7 @@ const Experience = () => {
 
         <div className="timeline">
           {experiences.map((jobKey) => {
+            const isSsafy = jobKey === "ssafy";
             // Count number of descriptions dynamically if needed,
             // but for simplicity we rely on the specific keys we know exist.
             const descKeys = [1, 2, 3];
@@ -48,6 +51,36 @@ const Experience = () => {
                       ) : null;
                     })}
                   </ul>
+                  {isSsafy ? (
+                    <div className="experience-media">
+                      <span className="detail-label experience-media-kicker">
+                        {t("experience.jobs.ssafy.media.kicker")}
+                      </span>
+                      <div className="experience-media-grid">
+                        <div className="experience-media-card experience-media-card-main">
+                          <img
+                            className="experience-media-image"
+                            src={ssafyCollaborationPhoto}
+                            alt={t("experience.jobs.ssafy.media.altMain")}
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div className="experience-media-card experience-media-card-secondary">
+                          <img
+                            className="experience-media-image"
+                            src={ssafyTeamPhoto}
+                            alt={t("experience.jobs.ssafy.media.altSecondary")}
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                      </div>
+                      <p className="experience-media-caption">
+                        {t("experience.jobs.ssafy.media.caption")}
+                      </p>
+                    </div>
+                  ) : null}
                 </div>
               </div>
             );
