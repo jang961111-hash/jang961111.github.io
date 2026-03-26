@@ -628,6 +628,10 @@
   overflow: hidden;
 }
 
+.experience-media-card picture {
+  display: block;
+}
+
 [data-theme="dark"] .experience-media-card {
   background: rgba(255, 255, 255, 0.03);
 }

@@ -1,7 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import useScrollReveal from '../hooks/useScrollReveal';
+import ssafyCollaborationPhotoWebp from "../assets/images/ssafy-collaboration.webp";
 import ssafyCollaborationPhoto from "../assets/images/ssafy-collaboration.jpg";
+import ssafyTeamPhotoWebp from "../assets/images/ssafy-team.webp";
 import ssafyTeamPhoto from "../assets/images/ssafy-team.jpg";
 import "./Section.css";
 
@@ -58,22 +60,42 @@ const Experience = () => {
                       </span>
                       <div className="experience-media-grid">
                         <div className="experience-media-card experience-media-card-main">
-                          <img
-                            className="experience-media-image"
-                            src={ssafyCollaborationPhoto}
-                            alt={t("experience.jobs.ssafy.media.altMain")}
-                            loading="lazy"
-                            decoding="async"
-                          />
+                          <picture>
+                            <source
+                              srcSet={ssafyCollaborationPhotoWebp}
+                              type="image/webp"
+                            />
+                            <source
+                              srcSet={ssafyCollaborationPhoto}
+                              type="image/jpeg"
+                            />
+                            <img
+                              className="experience-media-image"
+                              src={ssafyCollaborationPhoto}
+                              alt={t("experience.jobs.ssafy.media.altMain")}
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
                         </div>
                         <div className="experience-media-card experience-media-card-secondary">
-                          <img
-                            className="experience-media-image"
-                            src={ssafyTeamPhoto}
-                            alt={t("experience.jobs.ssafy.media.altSecondary")}
-                            loading="lazy"
-                            decoding="async"
-                          />
+                          <picture>
+                            <source
+                              srcSet={ssafyTeamPhotoWebp}
+                              type="image/webp"
+                            />
+                            <source
+                              srcSet={ssafyTeamPhoto}
+                              type="image/jpeg"
+                            />
+                            <img
+                              className="experience-media-image"
+                              src={ssafyTeamPhoto}
+                              alt={t("experience.jobs.ssafy.media.altSecondary")}
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
                         </div>
                       </div>
                       <p className="experience-media-caption">
