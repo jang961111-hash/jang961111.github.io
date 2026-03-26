@@ -1,15 +1,51 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
-  <title id="title">Byeongheon Jang favicon</title>
-  <desc id="desc">Monogram favicon with a structural B and signature dot.</desc>
-  <rect width="64" height="64" rx="12" fill="#050505" />
-  <rect x="4" y="4" width="56" height="56" rx="10" fill="none" stroke="#f0f0f0" stroke-width="3" />
+  <title id="title">Byeongheon Jang app logo</title>
+  <desc id="desc">Detailed structural monogram logo with a refined B mark and signal dot.</desc>
+  <defs>
+    <linearGradient id="bg" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#15191f" />
+      <stop offset="0.52" stop-color="#191514" />
+      <stop offset="1" stop-color="#0f1115" />
+    </linearGradient>
+    <linearGradient id="frame" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e6c593" />
+      <stop offset="1" stop-color="#9d6736" />
+    </linearGradient>
+    <linearGradient id="shadow" x1="18" y1="14" x2="42" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c2965c" stop-opacity="0.72" />
+      <stop offset="1" stop-color="#6b4422" stop-opacity="0.16" />
+    </linearGradient>
+    <clipPath id="clip">
+      <rect x="3" y="3" width="58" height="58" rx="12" />
+    </clipPath>
+  </defs>
+  <rect x="2.5" y="2.5" width="59" height="59" rx="12.5" fill="url(#bg)" />
+  <g clip-path="url(#clip)" opacity="0.22">
+    <path d="M12 7V57M22 7V57M32 7V57M42 7V57M52 7V57" stroke="#c2965c" stroke-width="0.75" />
+    <path d="M7 14H57M7 24H57M7 34H57M7 44H57M7 54H57" stroke="#c2965c" stroke-width="0.75" />
+    <path d="M8 20L24 8M40 56L56 40M8 44L20 56M44 8L56 20" stroke="#e2bc82" stroke-width="1" />
+  </g>
+  <rect x="6.5" y="6.5" width="51" height="51" rx="10.5" fill="none" stroke="url(#frame)" stroke-opacity="0.9" stroke-width="2.6" />
+  <rect x="10" y="10" width="44" height="44" rx="8" fill="none" stroke="#f8f0e6" stroke-opacity="0.16" stroke-width="1" />
   <path
-    d="M20 16V48M20 16H34M20 32H32M20 48H34M36 18V28M36 36V46"
+    d="M19.5 16V48H30.5Q36.5 48 36.5 42V38.25Q36.5 32.5 30.5 32.5H19.5M19.5 32.5H31.25Q37.5 32.5 37.5 26.25V21.75Q37.5 16 31.25 16H19.5"
     fill="none"
-    stroke="#f0f0f0"
-    stroke-linecap="square"
+    stroke="url(#shadow)"
+    stroke-linecap="round"
     stroke-linejoin="round"
-    stroke-width="5"
+    stroke-width="7.4"
   />
-  <circle cx="47" cy="46" r="4" fill="#f0f0f0" />
+  <path
+    d="M18.5 15.5V48.5H30.25Q35.75 48.5 35.75 42.75V38.5Q35.75 31.5 30.25 31.5H18.5M18.5 31.5H31Q36.75 31.5 36.75 25.75V21.5Q36.75 15.5 31 15.5H18.5"
+    fill="none"
+    stroke="#f8f0e6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="4.7"
+  />
+  <path d="M41 15H48.5V22.5" fill="none" stroke="#c2965c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M41 49H48.5V41.5" fill="none" stroke="#c2965c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="47" cy="46" r="4.9" fill="#c2965c" fill-opacity="0.28" />
+  <circle cx="47" cy="46" r="3.2" fill="#c2965c" />
+  <circle cx="47" cy="46" r="1.2" fill="#fff7ef" />
 </svg>
