@@ -15,7 +15,7 @@ export const pageMetadata = {
     path: "/en/",
     title: "Byeongheon Jang | Technical Product Manager",
     description:
-      "Portfolio of Byeongheon Jang, a technical product manager focused on product direction, scalable platform systems, and AI-aware decision support.",
+      "Portfolio of Byeongheon Jang, a technical product manager focused on product direction, scalable platform systems, and AI-assisted decision support.",
   },
 };
 

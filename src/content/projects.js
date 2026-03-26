@@ -47,15 +47,15 @@ export const projectUiCopy = {
   en: {
     sectionTitle: "Core Projects",
     sectionIntro:
-      "The flagship case stays deep, and the archive below is structured to grow into a full project library with recent work, ongoing builds, and future detail pages.",
+      "Instead of listing every build first, the page leads with one flagship case and then expands into a growing archive of recent, ongoing, and documented work.",
     featuredKicker: "Flagship case",
     featuredContext: "Why this case comes first",
-    archiveKicker: "Latest archive",
+    archiveKicker: "Project archive",
     archiveTitle: "Project Archive",
     archiveIntro:
-      "From current work to completed builds, the list is arranged so newer projects surface first and each card can expand into a dedicated detail page.",
+      "From ongoing work to completed builds, newer projects surface first and each card can grow into a dedicated detail page.",
     viewDetails: "View details",
-    readCaseStudy: "Open case study",
+    readCaseStudy: "Read case study",
     backToProjects: "Back to project archive",
     period: "Period",
     team: "Team",
@@ -67,11 +67,11 @@ export const projectUiCopy = {
     detailSections: "Project detail",
     artifacts: "Planned archive assets",
     artifactEmpty:
-      "Wireframes, UI captures, code links, and supporting documents will be attached as each project archive is documented.",
+      "Wireframes, UI captures, code links, and supporting documents will be added as each project archive is documented.",
     github: "GitHub",
     demo: "Live link",
     docs: "Docs",
-    linksPending: "Links in preparation",
+    linksPending: "Links coming soon",
     statusLabels: {
       planning: "Planning",
       in_progress: "In Progress",
@@ -383,17 +383,17 @@ export const portfolioProjects = [
       en: {
         kicker: "Demo workflow preview",
         intro:
-          "Until real product captures are attached, this demo mockup helps visitors quickly understand the core Loggy experience flow.",
+          "Until real product captures are added, this demo mockup helps visitors understand the core Loggy workflow at a glance.",
         note:
           "Replace these slots later with actual screens: main log dashboard, filter workbench, and collaboration review board.",
         slots: [
           {
             id: "stream",
             kicker: "Screen 01",
-            title: "Realtime log dashboard",
+            title: "Real-time log dashboard",
             caption:
-              "A mockup of the main view where teams inspect live logs and urgency signals in one surface.",
-            chips: ["5,000+ logs/sec", "Realtime", "Priority signal"],
+              "A mockup of the main view where teams inspect live logs and urgency signals on a single surface.",
+            chips: ["5,000+ logs/sec", "Real-time", "Priority signal"],
             rows: [
               "ERROR auth timeout / service-auth",
               "WARN retry queue spike / payment-worker",
@@ -451,11 +451,11 @@ export const portfolioProjects = [
     },
     role: {
       ko: "Product Owner & Frontend Lead | 문제 정의, 사용자 흐름 설계, 프론트엔드 구현, 실시간 검토 UX 설계",
-      en: "Product Owner & Frontend Lead | Problem framing, user flow design, frontend implementation, and realtime review UX",
+      en: "Product Owner & Frontend Lead | Problem framing, user flow design, frontend implementation, and real-time review UX",
     },
     tags: {
       ko: ["실시간성", "WebSocket", "회의 협업 웹", "의사결정 구조화"],
-      en: ["Realtime", "WebSocket", "Collaboration web", "Decision traceability"],
+      en: ["Real-time", "WebSocket", "Collaborative review", "Decision traceability"],
     },
     highlights: {
       ko: [
@@ -466,7 +466,7 @@ export const portfolioProjects = [
       en: [
         "Designed the experience to reduce log-analysis latency by 85%.",
         "Treated disappearing decision context as a product problem, not just a note-taking issue.",
-        "Unified realtime log review and team collaboration into one experience.",
+        "Unified real-time log review and team collaboration into one experience.",
       ],
     },
     proof: {
@@ -477,7 +477,7 @@ export const portfolioProjects = [
       ],
       en: [
         "I reframed a developer tooling issue as a product workflow problem.",
-        "I connected realtime system constraints directly to filtering and interaction decisions.",
+        "I connected real-time system constraints directly to filtering and interaction decisions.",
         "I aligned product scope, UI flow, and engineering execution around one review experience.",
       ],
     },
@@ -502,7 +502,7 @@ export const portfolioProjects = [
         },
         body: {
           ko: "회의 협업 웹이라는 큰 맥락 안에서, 왜 이런 결정이 내려졌는지 추적 가능한 의사결정 구조를 Git의 커밋 히스토리처럼 남기고 싶었습니다.",
-          en: "Within a collaboration-web context, the core idea was to preserve why a decision happened so the decision flow stays traceable instead of disappearing after the meeting ends.",
+          en: "At the core of the collaboration experience was preserving why a decision happened, so the reasoning stayed traceable instead of disappearing after meetings ended.",
         },
       },
       {
@@ -513,7 +513,7 @@ export const portfolioProjects = [
         },
         body: {
           ko: "단순히 로그를 보여주는 도구보다, 실시간 확인과 팀 간 논의가 이어지는 검토 흐름을 만들기 위해 화면 구조와 상호작용을 설계했습니다.",
-          en: "The goal was not just to display logs, but to create a review flow where realtime inspection and team discussion stay connected inside the same interface.",
+          en: "The goal was not just to display logs, but to create one review flow where real-time inspection and team discussion stayed connected in the same interface.",
         },
       },
       {
@@ -524,13 +524,13 @@ export const portfolioProjects = [
         },
         body: {
           ko: "실시간성을 위해 WebSocket 구조를 중심에 두고, 필터링과 검토가 끊기지 않도록 상태 관리와 화면 흐름을 함께 설계했습니다.",
-          en: "WebSocket-based realtime delivery sat at the center, with filtering, state flow, and interface structure designed so review work could continue without breaking context.",
+          en: "WebSocket-based real-time delivery sat at the center, with filtering, state flow, and interface structure designed so review work could continue without losing context.",
         },
       },
     ],
     artifacts: {
       ko: ["와이어프레임", "실시간 로그 화면 캡처", "상태 흐름 설명", "코드 구조 링크"],
-      en: ["Wireframes", "Realtime UI captures", "State-flow explanation", "Code-structure links"],
+      en: ["Wireframes", "Real-time UI captures", "State-flow explanation", "Code-structure links"],
     },
     links: {},
   },

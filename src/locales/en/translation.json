@@ -23,19 +23,19 @@
     "name": "Byeongheon Jang",
     "greeting": "Hello, I am",
     "title": "Technical Product Manager",
-    "portfolioLabel": "Product strategy · platform systems · AI decision support",
-    "positioning": "TPM for product strategy, execution systems, and AI-assisted decisions",
+    "portfolioLabel": "Product strategy / platform systems / AI decision support",
+    "positioning": "TPM focused on product strategy, execution systems, and AI-assisted decision-making",
     "focusLabel": "How I work",
-    "subtitle": "I turn ambiguous user and operational problems into product direction,\nexecution structure, and AI-assisted decision flows teams can actually ship.",
+    "subtitle": "I turn ambiguous user and operational problems into product direction,\nexecution structure, and AI-assisted decision flows that teams can actually ship.",
     "mission": "Before a team reaches for more features, I clarify the product problem, align execution, and make technical context usable for better decisions.",
     "signalItems": {
       "strategy": "Problem framing -> product direction",
       "execution": "Execution structure before feature sprawl",
-      "ai": "AI as decision support, not gimmick"
+      "ai": "AI as decision support, not a gimmick"
     },
     "snapshot": {
       "label": "Current signal",
-      "title": "Building product judgment through SSAFY, realtime systems, and AI interaction work",
+      "title": "Building product judgment through SSAFY, real-time systems, and AI interaction design",
       "text": "I keep translating messy product and operational questions into decisions a team can align around and execute."
     },
     "proofItems": {
@@ -43,7 +43,7 @@
       "ai": "AI interaction design grounded in user-behavior and blank-screen logs",
       "execution": "Execution alignment across planning, product framing, and implementation"
     },
-    "viewProjects": "See Flagship Work",
+    "viewProjects": "View Flagship Case",
     "getInTouch": "Start a Conversation",
     "downloadResume": "Open Resume PDF",
     "downloadResumeAria": "Download resume PDF"
@@ -77,11 +77,11 @@
         "problem": "Teams were manually scanning large volumes of raw logs across fragmented steps, which kept stretching the time needed to isolate root causes.",
         "insight": "The bottleneck was not just scale. The harder problem was missing context at the exact moment someone needed to decide which signal mattered next.",
         "architecture": "I shaped the experience around WebSocket streaming, structured filtering, and one continuous review surface so teams could inspect, narrow, and discuss logs without breaking flow.",
-        "role": "Product Owner & Frontend Lead | Problem framing, user flow design, frontend implementation, and realtime review UX",
+        "role": "Product Owner & Frontend Lead | Problem framing, user flow design, frontend implementation, and real-time review UX",
         "learning": "This project sharpened how I translate a technical pain point into product scope, interface structure, and implementation conversations the team can align around.",
         "proof": {
           "1": "I reframed a developer tooling issue as a product workflow problem.",
-          "2": "I connected realtime system constraints directly to filtering and interaction decisions.",
+          "2": "I connected real-time system constraints directly to filtering and interaction decisions.",
           "3": "I aligned product scope, UI flow, and engineering execution around one review experience."
         }
       }
@@ -212,14 +212,14 @@
   "contact": {
     "title": "Contact",
     "subtitle": "CONTACT",
-    "description": "I especially welcome conversations around TPM / PO roles, AI-enabled service planning, and turning messy execution into a clearer product roadmap.",
+    "description": "I especially welcome conversations about TPM / PO roles, AI-enabled service planning, and turning messy execution into a clearer product roadmap.",
     "topics": {
       "tpm": "TPM / PO opportunities",
       "ai": "AI service planning",
       "execution": "Execution structure"
     },
     "responseNote": "Email is the fastest way to reach me. A short context note is always welcome.",
-    "button": "Email about TPM / Product roles",
+    "button": "Email about TPM, PO, or product work",
     "github": "GitHub",
     "email": "Email",
     "resume": "PDF",
