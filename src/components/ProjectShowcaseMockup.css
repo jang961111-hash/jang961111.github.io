@@ -1,0 +1,226 @@
+.project-showcase {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-showcase-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.project-showcase-intro {
+  max-width: 72ch;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.project-showcase-compact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.95fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.project-showcase-secondary,
+.project-showcase-detail-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-showcase-detail-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-showcase-note {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.72;
+}
+
+.project-mock-panel {
+  display: grid;
+  gap: 0.95rem;
+  min-height: 100%;
+  padding: 1rem;
+  border-radius: calc(var(--border-radius) - 10px);
+  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="dark"] .project-mock-panel {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.project-mock-panel-primary {
+  padding: 1.15rem;
+}
+
+.project-mock-copy {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.project-mock-kicker {
+  color: var(--accent-primary);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.project-mock-title {
+  color: var(--text-primary);
+  font-size: 1.08rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.project-mock-caption {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.68;
+}
+
+.project-mock-surface {
+  display: grid;
+  gap: 0.75rem;
+  min-height: 170px;
+  padding: 0.9rem;
+  border-radius: 18px;
+  border: 1px solid rgba(147, 95, 49, 0.14);
+  background:
+    radial-gradient(circle at top left, rgba(194, 150, 92, 0.16), transparent 50%),
+    linear-gradient(180deg, rgba(252, 250, 246, 0.96), rgba(244, 240, 232, 0.92));
+  overflow: hidden;
+}
+
+[data-theme="dark"] .project-mock-surface {
+  border-color: rgba(226, 188, 130, 0.14);
+  background:
+    radial-gradient(circle at top left, rgba(194, 150, 92, 0.14), transparent 50%),
+    linear-gradient(180deg, rgba(24, 29, 37, 0.96), rgba(18, 22, 29, 0.92));
+}
+
+.project-mock-chrome {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.project-mock-chrome span {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(147, 95, 49, 0.45);
+}
+
+.project-mock-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.project-mock-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(147, 95, 49, 0.16);
+  color: var(--accent-primary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+[data-theme="dark"] .project-mock-chip {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.project-mock-log-stack,
+.project-mock-card-stack {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.project-mock-log-line,
+.project-mock-mini-card,
+.project-mock-review-item {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 38px;
+  padding: 0.62rem 0.75rem;
+  border-radius: 14px;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.58);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+[data-theme="dark"] .project-mock-log-line,
+[data-theme="dark"] .project-mock-mini-card,
+[data-theme="dark"] .project-mock-review-item {
+  background: rgba(8, 10, 14, 0.42);
+}
+
+.project-mock-log-pulse,
+.project-mock-review-avatar {
+  flex: 0 0 auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--accent-primary);
+}
+
+.project-mock-search-bar {
+  min-height: 40px;
+  padding: 0.7rem 0.85rem;
+  border-radius: 14px;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="dark"] .project-mock-search-bar {
+  background: rgba(8, 10, 14, 0.5);
+}
+
+.project-mock-review-status {
+  width: fit-content;
+  min-height: 30px;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid rgba(147, 95, 49, 0.16);
+  color: var(--accent-primary);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+[data-theme="dark"] .project-mock-review-status {
+  background: rgba(8, 10, 14, 0.54);
+}
+
+@media (max-width: 1080px) {
+  .project-showcase-compact-grid,
+  .project-showcase-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-mock-panel {
+    padding: 0.9rem;
+  }
+
+  .project-mock-caption,
+  .project-showcase-intro,
+  .project-showcase-note {
+    font-size: 0.9rem;
+  }
+}

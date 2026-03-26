@@ -9,6 +9,7 @@ import "./Hero.css";
 const Hero = () => {
   const { t, i18n } = useTranslation();
   const proofKeys = ["product", "ai", "execution"];
+  const signalKeys = ["strategy", "execution", "ai"];
   const strengthKeys = ["platform", "decision", "tech", "ai"];
   const portraitAlt =
     i18n.language === "ko"
@@ -24,6 +25,15 @@ const Hero = () => {
           <div className="hero-heading">
             <p className="hero-greeting">{t("hero.greeting")}</p>
             <h1 className="hero-title">{t("hero.name")}</h1>
+          </div>
+
+          <p className="hero-positioning">{t("hero.positioning")}</p>
+          <div className="hero-signal-list">
+            {signalKeys.map((key) => (
+              <span key={key} className="hero-signal-chip">
+                {t(`hero.signalItems.${key}`)}
+              </span>
+            ))}
           </div>
 
           <h2 className="hero-subtitle">{t("hero.subtitle")}</h2>
@@ -88,6 +98,11 @@ const Hero = () => {
                   {t(`identity.skills.${key}`)}
                 </span>
               ))}
+            </div>
+            <div className="hero-snapshot-card">
+              <p className="hero-snapshot-label">{t("hero.snapshot.label")}</p>
+              <p className="hero-snapshot-title">{t("hero.snapshot.title")}</p>
+              <p className="hero-snapshot-text">{t("hero.snapshot.text")}</p>
             </div>
           </div>
         </aside>

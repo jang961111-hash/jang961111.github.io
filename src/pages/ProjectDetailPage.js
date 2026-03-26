@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { projectUiCopy } from "../content/projects";
+import ProjectShowcaseMockup from "../components/ProjectShowcaseMockup";
 import { queueScrollTarget } from "../utils/scrollTarget";
 import "./ProjectDetailPage.css";
 
@@ -90,6 +91,12 @@ const ProjectDetailPage = ({ project, lang }) => {
 
         <div className="project-detail-content-grid">
           <div className="project-detail-main">
+            {project.visuals ? (
+              <article className="structural-card project-detail-card">
+                <ProjectShowcaseMockup visuals={project.visuals} variant="detail" />
+              </article>
+            ) : null}
+
             <article className="structural-card project-detail-card">
               <span className="detail-label">{copy.highlights}</span>
               <ul className="project-proof-list">

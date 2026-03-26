@@ -24,9 +24,20 @@
     "greeting": "Hello, I am",
     "title": "Technical Product Manager",
     "portfolioLabel": "Product strategy · platform systems · AI decision support",
+    "positioning": "TPM for product strategy, execution systems, and AI-assisted decisions",
     "focusLabel": "How I work",
-    "subtitle": "I turn ambiguous user and operational problems into product direction,\nexecution structure, and AI-assisted decision flows.",
-    "mission": "My strength is creating structure before a team reaches for more features: clarifying the product problem, aligning execution, and making technical context usable for better decisions.",
+    "subtitle": "I turn ambiguous user and operational problems into product direction,\nexecution structure, and AI-assisted decision flows teams can actually ship.",
+    "mission": "Before a team reaches for more features, I clarify the product problem, align execution, and make technical context usable for better decisions.",
+    "signalItems": {
+      "strategy": "Problem framing -> product direction",
+      "execution": "Execution structure before feature sprawl",
+      "ai": "AI as decision support, not gimmick"
+    },
+    "snapshot": {
+      "label": "Current signal",
+      "title": "Building product judgment through SSAFY, realtime systems, and AI interaction work",
+      "text": "I keep translating messy product and operational questions into decisions a team can align around and execute."
+    },
     "proofItems": {
       "product": "Product ownership and frontend leadership for a real-time log platform",
       "ai": "AI interaction design grounded in user-behavior and blank-screen logs",
@@ -166,6 +177,11 @@
           "altMain": "Collaborating with teammates during a SSAFY project session",
           "altSecondary": "SSAFY team photo in front of the SSAFY sign"
         },
+        "proofChips": {
+          "problem": "Problem framing",
+          "collaboration": "Cross-functional collaboration",
+          "ownership": "Execution ownership"
+        },
         "desc1": "I have been working through algorithms, web development, and AI service projects while gaining first-hand experience in technical decision-making.",
         "desc2": "Across several projects, I have handled problem framing, role coordination, screen flow design, and collaboration with developers.",
         "desc3": "Projects around real-time logs, AI interaction design, and hackathons have helped me connect planning with implementation."
@@ -196,8 +212,14 @@
   "contact": {
     "title": "Contact",
     "subtitle": "CONTACT",
-    "description": "I am always open to conversations about new opportunities, product strategy, and AI-enabled service design.",
-    "button": "Say Hello",
+    "description": "I especially welcome conversations around TPM / PO roles, AI-enabled service planning, and turning messy execution into a clearer product roadmap.",
+    "topics": {
+      "tpm": "TPM / PO opportunities",
+      "ai": "AI service planning",
+      "execution": "Execution structure"
+    },
+    "responseNote": "Email is the fastest way to reach me. A short context note is always welcome.",
+    "button": "Email about TPM / Product roles",
     "github": "GitHub",
     "email": "Email",
     "resume": "PDF",

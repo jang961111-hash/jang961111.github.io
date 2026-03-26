@@ -68,6 +68,26 @@ beforeEach(async () => {
 });
 
 describe("App routing flows", () => {
+  test("surfaces first-screen positioning and flagship mockup on the English home", async () => {
+    renderAtRoute("/en/");
+
+    await waitFor(() => {
+      expect(
+        screen.getByText(
+          "TPM for product strategy, execution systems, and AI-assisted decisions"
+        )
+      ).toBeTruthy();
+    });
+
+    expect(screen.getByText("Demo workflow preview")).toBeTruthy();
+    expect(
+      screen.getByText(
+        "Replace these slots later with actual screens: main log dashboard, filter workbench, and collaboration review board."
+      )
+    ).toBeTruthy();
+    expect(screen.getByText("TPM / PO opportunities")).toBeTruthy();
+  });
+
   test("renders localized SSAFY proof photos on both home routes", async () => {
     const koreanView = renderAtRoute("/");
 

@@ -329,6 +329,108 @@ export const portfolioProjects = [
       ko: "제품 방향, 프론트엔드 실행, 기술 의사결정이 동시에 맞물릴 때 제가 어떻게 일하는지 가장 잘 보여주는 프로젝트입니다.",
       en: "This is the project that best shows how I work when product direction, frontend execution, and technical decision-making have to move together.",
     },
+    visuals: {
+      ko: {
+        kicker: "Demo workflow preview",
+        intro:
+          "실제 화면 캡처 전 단계에서, Loggy의 핵심 경험 흐름을 빠르게 이해할 수 있도록 만든 데모 mockup입니다.",
+        note:
+          "추후 실제 캡처로 교체할 슬롯입니다: 메인 로그 대시보드, 필터 워크벤치, 협업 리뷰 보드.",
+        slots: [
+          {
+            id: "stream",
+            kicker: "Screen 01",
+            title: "실시간 로그 대시보드",
+            caption:
+              "수집 로그와 우선순위 신호를 한 화면에서 검토하는 메인 뷰를 가정한 mockup입니다.",
+            chips: ["5,000+ logs/sec", "Realtime", "Priority signal"],
+            rows: [
+              "ERROR auth timeout / service-auth",
+              "WARN retry queue spike / payment-worker",
+              "INFO websocket reconnect / gateway",
+              "FLAG repeated failure cluster detected",
+            ],
+          },
+          {
+            id: "filter",
+            kicker: "Screen 02",
+            title: "필터 워크벤치",
+            caption:
+              "문제 로그를 빠르게 좁혀 가는 검색, 태그, severity 필터 흐름을 표현한 mockup입니다.",
+            searchLabel: "Search error, service, correlation id...",
+            chips: ["Severity", "Service", "Time window"],
+            rows: [
+              "Pinned filter: payment-worker + ERROR",
+              "Saved view: auth retry cluster",
+              "Suggested slice: websocket reconnect storm",
+            ],
+          },
+          {
+            id: "review",
+            kicker: "Screen 03",
+            title: "협업 리뷰 보드",
+            caption:
+              "팀 논의와 결정 맥락이 사라지지 않도록 남기는 리뷰 흐름을 표현한 mockup입니다.",
+            statusLabel: "Decision traced",
+            rows: [
+              "Frontend lead: isolate client retry pattern",
+              "Backend owner: compare auth timeout window",
+              "Decision: keep one shared review thread",
+            ],
+          },
+        ],
+      },
+      en: {
+        kicker: "Demo workflow preview",
+        intro:
+          "Until real product captures are attached, this demo mockup helps visitors quickly understand the core Loggy experience flow.",
+        note:
+          "Replace these slots later with actual screens: main log dashboard, filter workbench, and collaboration review board.",
+        slots: [
+          {
+            id: "stream",
+            kicker: "Screen 01",
+            title: "Realtime log dashboard",
+            caption:
+              "A mockup of the main view where teams inspect live logs and urgency signals in one surface.",
+            chips: ["5,000+ logs/sec", "Realtime", "Priority signal"],
+            rows: [
+              "ERROR auth timeout / service-auth",
+              "WARN retry queue spike / payment-worker",
+              "INFO websocket reconnect / gateway",
+              "FLAG repeated failure cluster detected",
+            ],
+          },
+          {
+            id: "filter",
+            kicker: "Screen 02",
+            title: "Filter workbench",
+            caption:
+              "A mockup for the search, tag, and severity flow that narrows down the right logs faster.",
+            searchLabel: "Search error, service, correlation id...",
+            chips: ["Severity", "Service", "Time window"],
+            rows: [
+              "Pinned filter: payment-worker + ERROR",
+              "Saved view: auth retry cluster",
+              "Suggested slice: websocket reconnect storm",
+            ],
+          },
+          {
+            id: "review",
+            kicker: "Screen 03",
+            title: "Collaboration review board",
+            caption:
+              "A mockup of the review flow that keeps team discussion and decision context visible.",
+            statusLabel: "Decision traced",
+            rows: [
+              "Frontend lead: isolate client retry pattern",
+              "Backend owner: compare auth timeout window",
+              "Decision: keep one shared review thread",
+            ],
+          },
+        ],
+      },
+    },
     story: {
       problem: {
         ko: "개발팀은 대량의 원시 로그를 여러 단계를 거쳐 수동으로 읽고 있었고, 그만큼 원인 파악까지 걸리는 시간이 길어지고 있었습니다.",
@@ -669,6 +771,7 @@ export const getLocalizedProject = (project, lang = "ko") => {
     artifacts: localizeValue(project.artifacts, lang) ?? [],
     metrics: localizeValue(project.metrics, lang) ?? [],
     proof: localizeValue(project.proof, lang) ?? [],
+    visuals: localizeValue(project.visuals, lang) ?? null,
     story: project.story
       ? {
           problem: localizeValue(project.story.problem, lang),

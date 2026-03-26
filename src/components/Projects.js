@@ -7,6 +7,7 @@ import {
   getLocalizedFeaturedProject,
   projectUiCopy,
 } from "../content/projects";
+import ProjectShowcaseMockup from "./ProjectShowcaseMockup";
 import "./Section.css";
 
 const storyKeys = [
@@ -29,6 +30,7 @@ const featureLabels = {
     insight: "Structural insight",
     solution: "Experience + system design",
     role: "Role",
+    result: "Result",
     highlights: "Highlights",
     proof: "What this project proves",
   },
@@ -42,6 +44,20 @@ const Projects = () => {
   const featuredProject = getLocalizedFeaturedProject(lang);
   const archiveProjects = getLocalizedArchiveProjects(lang);
   const { elementRef, isVisible } = useScrollReveal();
+  const featuredScanItems = [
+    {
+      label: labels.role,
+      value: featuredProject.role,
+    },
+    {
+      label: labels.result ?? (lang === "ko" ? "핵심 결과" : "Result"),
+      value: featuredProject.metrics[0],
+    },
+    {
+      label: labels.proof,
+      value: featuredProject.proof[0],
+    },
+  ].filter((item) => Boolean(item.value));
 
   return (
     <section id="projects" className="section">
@@ -77,6 +93,19 @@ const Projects = () => {
               ))}
             </div>
 
+            <div className="project-scan-grid">
+              {featuredScanItems.map((item) => (
+                <div key={item.label} className="project-scan-card">
+                  <span className="detail-label">{item.label}</span>
+                  <p className="project-scan-value">{item.value}</p>
+                </div>
+              ))}
+            </div>
+
+            {featuredProject.visuals ? (
+              <ProjectShowcaseMockup visuals={featuredProject.visuals} />
+            ) : null}
+
             <div className="project-story-grid">
               <div className="project-story-stack">
                 {storyKeys.map(({ id, labelKey }) => (
@@ -90,10 +119,6 @@ const Projects = () => {
               </div>
 
               <div className="project-side-column">
-                <div className="detail-item project-side-card">
-                  <span className="detail-label">{labels.role}</span>
-                  <p>{featuredProject.role}</p>
-                </div>
                 <div className="detail-item project-side-card">
                   <span className="detail-label">{labels.highlights}</span>
                   <ul className="project-proof-list">

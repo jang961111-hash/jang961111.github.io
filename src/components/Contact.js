@@ -8,6 +8,7 @@ import './Contact.css';
 const Contact = () => {
   const { t, i18n } = useTranslation();
   const { elementRef, isVisible } = useScrollReveal();
+  const topicKeys = ["tpm", "ai", "execution"];
   const profileLinks = [
     {
       label: t('contact.github'),
@@ -34,6 +35,14 @@ const Contact = () => {
         <p className="contact-description">
           {t('contact.description')}
         </p>
+        <div className="contact-topic-list">
+          {topicKeys.map((key) => (
+            <span key={key} className="contact-topic-chip">
+              {t(`contact.topics.${key}`)}
+            </span>
+          ))}
+        </div>
+        <p className="contact-response-note">{t('contact.responseNote')}</p>
         <div className="contact-buttons">
           <a href="mailto:jang961111@gmail.com" className="cta-button primary">{t('contact.button')}</a>
         </div>

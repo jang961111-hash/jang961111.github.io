@@ -12,6 +12,7 @@ const Experience = () => {
   const { elementRef, isVisible } = useScrollReveal();
 
   const experiences = ["ssafy", "marines", "jaguar", "restaurant"];
+  const ssafyProofChipKeys = ["problem", "collaboration", "ownership"];
 
   return (
     <section id="experience" className="section">
@@ -101,6 +102,13 @@ const Experience = () => {
                       <p className="experience-media-caption">
                         {t("experience.jobs.ssafy.media.caption")}
                       </p>
+                      <div className="experience-proof-chip-list">
+                        {ssafyProofChipKeys.map((key) => (
+                          <span key={key} className="experience-proof-chip">
+                            {t(`experience.jobs.ssafy.proofChips.${key}`)}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   ) : null}
                 </div>

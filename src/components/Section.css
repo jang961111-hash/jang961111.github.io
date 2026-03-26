@@ -238,6 +238,26 @@
   gap: 0.75rem;
 }
 
+.project-scan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.95rem;
+}
+
+.project-scan-card {
+  padding: 1rem 1.05rem;
+  border-radius: calc(var(--border-radius) - 10px);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-hover);
+}
+
+.project-scan-value {
+  color: var(--text-primary);
+  font-size: 0.96rem;
+  font-weight: 700;
+  line-height: 1.68;
+}
+
 .metric-badge {
   display: inline-flex;
   align-items: center;
@@ -664,6 +684,27 @@
   line-height: 1.78;
 }
 
+.experience-proof-chip-list {
+  margin-top: 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.experience-proof-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(147, 95, 49, 0.16);
+  background: rgba(147, 95, 49, 0.08);
+  color: var(--accent-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
 .reveal-base {
   opacity: 0;
   transform: translateY(28px);
@@ -688,6 +729,10 @@
   .project-story-grid,
   .project-archive-grid,
   .experience-media-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-scan-grid {
     grid-template-columns: 1fr;
   }
 }
